@@ -2,11 +2,11 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: graph/bi_connected_components.hpp
-    title: graph/bi_connected_components.hpp
-  - icon: ':heavy_check_mark:'
     path: graph/lowlink.hpp
     title: graph/lowlink.hpp
+  - icon: ':heavy_check_mark:'
+    path: graph/two_edge_connected_components.hpp
+    title: graph/two_edge_connected_components.hpp
   - icon: ':heavy_check_mark:'
     path: graph/undirected_graph.hpp
     title: graph/undirected_graph.hpp
@@ -20,15 +20,15 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://judge.yosupo.jp/problem/biconnected_components
+    PROBLEM: https://judge.yosupo.jp/problem/two_edge_connected_components
     links:
-    - https://judge.yosupo.jp/problem/biconnected_components
-  bundledCode: "#line 1 \"test/LibraryChecker/bi_connected_components.test.cpp\"\n\
-    #define PROBLEM \"https://judge.yosupo.jp/problem/biconnected_components\"\n\n\
-    #line 1 \"template/template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
-    #define ll long long\n#define ull unsigned long long\n#define db double\n#define\
-    \ pii pair<int,int>\n#define pli pair<ll,int>\n#define pil pair<int,ll>\n#define\
-    \ pll pair<ll,ll>\n#define ti3 tuple<int,int,int>\n#define int128 __int128_t\n\
+    - https://judge.yosupo.jp/problem/two_edge_connected_components
+  bundledCode: "#line 1 \"test/LibraryChecker/two_edge_connected_components.test.cpp\"\
+    \n#define PROBLEM \"https://judge.yosupo.jp/problem/two_edge_connected_components\"\
+    \n\n#line 1 \"template/template.hpp\"\n#include<bits/stdc++.h>\nusing namespace\
+    \ std;\n#define ll long long\n#define ull unsigned long long\n#define db double\n\
+    #define pii pair<int,int>\n#define pli pair<ll,int>\n#define pil pair<int,ll>\n\
+    #define pll pair<ll,ll>\n#define ti3 tuple<int,int,int>\n#define int128 __int128_t\n\
     #define pii128 pair<int128,int128>\nconst int inf = 1 << 30;\nconst ll linf =\
     \ 1e18;\nconst ll mod = 1e9 + 7;\nconst db EPS = 1e-10;\nconst db pi = acos(-1);\n\
     template<class T> bool chmin(T& x, T y){\n    if(x > y) {\n        x = y;\n  \
@@ -76,59 +76,50 @@ data:
     \ n);\n        return aps[v];\n    }\n\n    bool is_bridge(int v, int i) {\n \
     \       assert(built);\n        assert(0 <= v && v < n);\n        assert(0 <=\
     \ i && i < (int)bridge[v].size());\n        return bridge[v][i];\n    }\n};\n\
-    #line 2 \"graph/bi_connected_components.hpp\"\n\nstruct bi_connected_components\
-    \ : lowlink {\n    vector<vector<int>> components;\n    vector<int> used, visited;\n\
-    \    vector<pii> tmp;\n    bi_connected_components(int _n) : lowlink(_n), used(_n),\
-    \ visited(_n) {}\n\n    void dfs(int v, int p) {\n        visited[v] = true;\n\
-    \        for (auto&& u : g[v]) {\n            if (u == p) continue;\n        \
-    \    if (!visited[u] || ord[u] < ord[v]) tmp.emplace_back(min(u, v), max(u, v));\n\
-    \            if (!visited[u]) {\n                dfs(u, v);\n                if\
-    \ (low[u] >= ord[v]) {\n                    components.emplace_back();\n     \
-    \               while (!tmp.empty()) {\n                        auto [a, b] =\
-    \ tmp.back();\n                        tmp.pop_back();\n                     \
-    \   if (!used[a]) components.back().emplace_back(a), used[a] = true;\n       \
-    \                 if (!used[b]) components.back().emplace_back(b), used[b] = true;\n\
-    \                        if (a == min(u, v) && b == max(u, v)) break;\n      \
-    \              }\n                    for (auto elem : components.back()) used[elem]\
-    \ = false;\n                }\n            }\n        }\n    }\n\n    void build()\
-    \ {\n        lowlink::build();\n        for (int v = 0; v < n; v++) {\n      \
-    \      if (visited[v]) continue;\n            dfs(v, -1);\n        }\n\n     \
-    \   for (auto c : components) {\n            for (auto v : c) {\n            \
-    \    used[v] = true;\n            }\n        }\n\n        for (int v = 0; v< n;\
-    \ v++) {\n            if (used[v]) continue;\n            components.push_back({v});\n\
-    \        }\n    }\n\n    vector<vector<int>> get_components() {\n        assert(built);\n\
-    \        return components;\n    }\n};\n#line 5 \"test/LibraryChecker/bi_connected_components.test.cpp\"\
+    #line 2 \"graph/two_edge_connected_components.hpp\"\n\nstruct two_edge_connected_components\
+    \ : lowlink {\n    vector<int> idx;\n    vector<vector<int>> components;\n   \
+    \ undirected_graph ng;\n    two_edge_connected_components(int _n) : lowlink(_n),\
+    \ idx(_n, -1) {}\n\n    void dfs(int v) {\n        for (int i = 0; i < (int)g[v].size();\
+    \ i++) {\n            int u =g[v][i];\n            if (bridge[v][i] || idx[u]\
+    \ != -1) continue;\n            idx[u] = idx[v];\n            dfs(u);\n      \
+    \  }\n    }\n\n    void build() {\n        int nn = 0;\n        lowlink::build();\n\
+    \        for (int v = 0; v < n; v++) {\n            if (idx[v] != -1) continue;\n\
+    \            idx[v] = nn++;\n            dfs(v);\n        }\n\n        components.resize(nn);\n\
+    \        for (int v = 0; v < n; v++) {\n            components[idx[v]].push_back(v);\n\
+    \        }\n    }\n\n    vector<vector<int>> get_components() {\n        return\
+    \ components;\n    }\n\n    int get_idx(int v) {\n        assert(built);\n   \
+    \     return idx[v];\n    }\n};\n#line 5 \"test/LibraryChecker/two_edge_connected_components.test.cpp\"\
     \n\nint N, M;\nint main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
-    \    cout << fixed << setprecision(20);\n    cin >> N >> M;\n    bi_connected_components\
+    \    cout << fixed << setprecision(20);\n    cin >> N >> M;\n    two_edge_connected_components\
     \ g(N);\n    rep (i, M) {\n        int a, b;\n        cin >> a >> b;\n       \
-    \ g.add_edge(a, b);\n    }\n\n    g.build();\n    auto cs = g.get_components();\n\
+    \ g.add_edge(a, b);\n    }\n\n    g.build();\n    \n    auto cs = g.get_components();\n\
     \n    cout << cs.size() << '\\n';\n    for (auto&& c : cs) {\n        cout <<\
     \ c.size();\n        for (auto&& u : c) cout << ' ' << u;\n        cout << '\\\
     n';\n    }\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/biconnected_components\"\
-    \n\n#include \"../../template/template.hpp\"\n#include \"../../graph/bi_connected_components.hpp\"\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/two_edge_connected_components\"\
+    \n\n#include \"../../template/template.hpp\"\n#include \"../../graph/two_edge_connected_components.hpp\"\
     \n\nint N, M;\nint main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
-    \    cout << fixed << setprecision(20);\n    cin >> N >> M;\n    bi_connected_components\
+    \    cout << fixed << setprecision(20);\n    cin >> N >> M;\n    two_edge_connected_components\
     \ g(N);\n    rep (i, M) {\n        int a, b;\n        cin >> a >> b;\n       \
-    \ g.add_edge(a, b);\n    }\n\n    g.build();\n    auto cs = g.get_components();\n\
+    \ g.add_edge(a, b);\n    }\n\n    g.build();\n    \n    auto cs = g.get_components();\n\
     \n    cout << cs.size() << '\\n';\n    for (auto&& c : cs) {\n        cout <<\
     \ c.size();\n        for (auto&& u : c) cout << ' ' << u;\n        cout << '\\\
     n';\n    }\n}"
   dependsOn:
   - template/template.hpp
-  - graph/bi_connected_components.hpp
+  - graph/two_edge_connected_components.hpp
   - graph/lowlink.hpp
   - graph/undirected_graph.hpp
   isVerificationFile: true
-  path: test/LibraryChecker/bi_connected_components.test.cpp
+  path: test/LibraryChecker/two_edge_connected_components.test.cpp
   requiredBy: []
   timestamp: '2024-01-15 18:04:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/LibraryChecker/bi_connected_components.test.cpp
+documentation_of: test/LibraryChecker/two_edge_connected_components.test.cpp
 layout: document
 redirect_from:
-- /verify/test/LibraryChecker/bi_connected_components.test.cpp
-- /verify/test/LibraryChecker/bi_connected_components.test.cpp.html
-title: test/LibraryChecker/bi_connected_components.test.cpp
+- /verify/test/LibraryChecker/two_edge_connected_components.test.cpp
+- /verify/test/LibraryChecker/two_edge_connected_components.test.cpp.html
+title: test/LibraryChecker/two_edge_connected_components.test.cpp
 ---

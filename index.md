@@ -16,6 +16,9 @@ data:
       path: graph/strongly_connected_components.hpp
       title: graph/strongly_connected_components.hpp
     - icon: ':heavy_check_mark:'
+      path: graph/two_edge_connected_components.hpp
+      title: graph/two_edge_connected_components.hpp
+    - icon: ':heavy_check_mark:'
       path: graph/undirected_graph.hpp
       title: graph/undirected_graph.hpp
   - name: template
@@ -32,5 +35,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/strongly_connected_components.test.cpp
       title: test/LibraryChecker/strongly_connected_components.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/two_edge_connected_components.test.cpp
+      title: test/LibraryChecker/two_edge_connected_components.test.cpp
 layout: toppage
 ---

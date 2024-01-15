@@ -8,10 +8,16 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/lowlink.hpp
     title: graph/lowlink.hpp
+  - icon: ':heavy_check_mark:'
+    path: graph/two_edge_connected_components.hpp
+    title: graph/two_edge_connected_components.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/bi_connected_components.test.cpp
     title: test/LibraryChecker/bi_connected_components.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/two_edge_connected_components.test.cpp
+    title: test/LibraryChecker/two_edge_connected_components.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -32,9 +38,11 @@ data:
   requiredBy:
   - graph/bi_connected_components.hpp
   - graph/lowlink.hpp
-  timestamp: '2024-01-15 17:38:53+09:00'
+  - graph/two_edge_connected_components.hpp
+  timestamp: '2024-01-15 18:04:41+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/LibraryChecker/two_edge_connected_components.test.cpp
   - test/LibraryChecker/bi_connected_components.test.cpp
 documentation_of: graph/undirected_graph.hpp
 layout: document
