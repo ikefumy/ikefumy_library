@@ -120,7 +120,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/bi_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-01-15 17:17:32+09:00'
+  timestamp: '2024-01-15 17:38:53+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/bi_connected_components.test.cpp
