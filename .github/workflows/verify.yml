@@ -18,6 +18,9 @@ jobs:
 
     - name: Install dependencies
       run: pip3 install -U online-judge-verify-helper
+    
+    - name: fetch
+      run: git fetch
 
     # # required only if you want to verify Haskell code
     # - name: Install dependencies (Haskell)
