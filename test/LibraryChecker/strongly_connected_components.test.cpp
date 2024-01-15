@@ -9,6 +9,9 @@ int main() {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
     cout << fixed << setprecision(20);
+    cin.tie(nullptr);
+    ios_base::sync_with_stdio(false);
+    cout << fixed << setprecision(20);
     cin >> N >> M;
     strongly_connected_components g(N);
     rep (i, M) {
