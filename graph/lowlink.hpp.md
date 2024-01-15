@@ -74,7 +74,7 @@ data:
   requiredBy:
   - graph/bi_connected_components.hpp
   - graph/two_edge_connected_components.hpp
-  timestamp: '2024-01-15 18:04:41+09:00'
+  timestamp: '2024-01-15 18:09:16+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/two_edge_connected_components.test.cpp

@@ -71,17 +71,15 @@ data:
     \ }\n};\n#line 5 \"test/LibraryChecker/strongly_connected_components.test.cpp\"\
     \n\nint N, M;\nvector<int> cs[500010];\nint main() {\n    cin.tie(nullptr);\n\
     \    ios_base::sync_with_stdio(false);\n    cout << fixed << setprecision(20);\n\
-    \    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n    cout << fixed\
-    \ << setprecision(20);\n    cin >> N >> M;\n    strongly_connected_components\
-    \ g(N);\n    rep (i, M) {\n        int a, b;\n        cin >> a >> b;\n       \
-    \ g.add_edge(a, b);\n    }\n\n    int tp = g.build();\n    rep (i, N) {\n    \
-    \    cs[g.get_cmp(i)].emplace_back(i);\n    }\n\n    cout << tp << '\\n';\n  \
-    \  rep (i, tp) {\n        cout << cs[i].size();\n        for (auto&& u : cs[i])\
-    \ cout << ' ' << u;\n        cout << '\\n';\n    } \n}\n"
+    \    cin >> N >> M;\n    strongly_connected_components g(N);\n    rep (i, M) {\n\
+    \        int a, b;\n        cin >> a >> b;\n        g.add_edge(a, b);\n    }\n\
+    \n    int tp = g.build();\n    rep (i, N) {\n        cs[g.get_cmp(i)].emplace_back(i);\n\
+    \    }\n\n    cout << tp << '\\n';\n    rep (i, tp) {\n        cout << cs[i].size();\n\
+    \        for (auto&& u : cs[i]) cout << ' ' << u;\n        cout << '\\n';\n  \
+    \  } \n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/scc\"\n\n#include \"../../template/template.hpp\"\
     \n#include \"../../graph/strongly_connected_components.hpp\"\n\nint N, M;\nvector<int>\
     \ cs[500010];\nint main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
-    \    cout << fixed << setprecision(20);\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
     \    cout << fixed << setprecision(20);\n    cin >> N >> M;\n    strongly_connected_components\
     \ g(N);\n    rep (i, M) {\n        int a, b;\n        cin >> a >> b;\n       \
     \ g.add_edge(a, b);\n    }\n\n    int tp = g.build();\n    rep (i, N) {\n    \
@@ -95,7 +93,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/strongly_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-01-15 18:04:41+09:00'
+  timestamp: '2024-01-15 18:09:16+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/strongly_connected_components.test.cpp
