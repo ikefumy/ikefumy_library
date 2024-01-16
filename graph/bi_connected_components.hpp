@@ -3,7 +3,7 @@
 struct bi_connected_components : lowlink {
     vector<vector<int>> components;
     vector<int> used, visited;
-    vector<pii> tmp;
+    vector<pair<int, int>> tmp;
     bi_connected_components(int _n) : lowlink(_n), used(_n), visited(_n) {}
 
     void dfs(int v, int p) {
