@@ -74,7 +74,7 @@ struct mint {
     }
 };
 
-mint modpow(mint x, ll y) {
+mint modpow(mint x, long long y) {
     if (y == 0) return 1;
     return modpow(x * x, y / 2) * (y & 1 ? x : 1);
 }
