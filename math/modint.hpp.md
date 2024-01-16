@@ -65,12 +65,12 @@ data:
     \  \n    friend istream &operator >> (istream& lhs, mint& rhs) {\n        lhs\
     \ >> rhs.num;\n        rhs.num = (rhs.num % modulo + modulo) % modulo;\n     \
     \   return lhs;\n    }\n};\n\nmint modpow(mint x, ll y) {\n    if (y == 0) return\
-    \ 1;\n    return modpow(x * x, y / 2) * (y & 1 ? x : 1);\n}\n"
+    \ 1;\n    return modpow(x * x, y / 2) * (y & 1 ? x : 1);\n}"
   dependsOn: []
   isVerificationFile: false
   path: math/modint.hpp
   requiredBy: []
-  timestamp: '2024-01-16 15:25:47+09:00'
+  timestamp: '2024-01-16 15:30:52+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
