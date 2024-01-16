@@ -75,16 +75,16 @@ data:
     \ << rhs.num;\n        return lhs;\n    }\n    \n    friend istream &operator\
     \ >> (istream& lhs, mint& rhs) {\n        lhs >> rhs.num;\n        rhs.num = (rhs.num\
     \ % modulo + modulo) % modulo;\n        return lhs;\n    }\n};\n\nmint modpow(mint\
-    \ x, ll y) {\n    if (y == 0) return 1;\n    return modpow(x * x, y / 2) * (y\
-    \ & 1 ? x : 1);\n}\n#line 1 \"math/comb_perm.hpp\"\nstruct comb_perm{\n    int\
-    \ n;\n    vector<mint> fac;\n    vector<mint> ifac;\n\n    comb_perm(int _n):\
-    \ n(_n), fac(_n + 1), ifac(_n + 1){\n        fac[0] = ifac[0] = 1;\n        for(int\
-    \ i = 1; i <= n; i++){\n            fac[i] = fac[i - 1] * i;\n        }\n    \
-    \    ifac[n] = (mint)1 / fac[n];\n        for (int i = n - 1; i >= 1; i--) {\n\
-    \            ifac[i] = ifac[i + 1] * (i + 1);\n        }\n    }\n\n    mint comb(int\
-    \ p, int r){\n        return (p < r ? 0 : fac[p] * ifac[r] * ifac[p - r]);\n \
-    \   }\n\n    mint perm(int p, int r){\n        return (p < r ? 0 : fac[p] * ifac[p\
-    \ - r]);\n    }\n};\n#line 6 \"test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp\"\
+    \ x, long long y) {\n    if (y == 0) return 1;\n    return modpow(x * x, y / 2)\
+    \ * (y & 1 ? x : 1);\n}\n#line 1 \"math/comb_perm.hpp\"\nstruct comb_perm{\n \
+    \   int n;\n    vector<mint> fac;\n    vector<mint> ifac;\n\n    comb_perm(int\
+    \ _n): n(_n), fac(_n + 1), ifac(_n + 1){\n        fac[0] = ifac[0] = 1;\n    \
+    \    for(int i = 1; i <= n; i++){\n            fac[i] = fac[i - 1] * i;\n    \
+    \    }\n        ifac[n] = (mint)1 / fac[n];\n        for (int i = n - 1; i >=\
+    \ 1; i--) {\n            ifac[i] = ifac[i + 1] * (i + 1);\n        }\n    }\n\n\
+    \    mint comb(int p, int r){\n        return (p < r ? 0 : fac[p] * ifac[r] *\
+    \ ifac[p - r]);\n    }\n\n    mint perm(int p, int r){\n        return (p < r\
+    \ ? 0 : fac[p] * ifac[p - r]);\n    }\n};\n#line 6 \"test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp\"\
     \n\nint T, m;\nint main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
     \    cout << fixed << setprecision(20);\n    cin >>T >> m;\n    mint::modulo =\
     \ m;\n\n    comb_perm cp(min(m - 1, 10000000));\n    rep (i, T) {\n        int\
@@ -107,7 +107,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
   requiredBy: []
-  timestamp: '2024-01-16 15:30:52+09:00'
+  timestamp: '2024-01-16 15:32:53+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
