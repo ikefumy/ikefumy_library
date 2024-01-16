@@ -21,6 +21,20 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/undirected_graph.hpp
       title: graph/undirected_graph.hpp
+  - name: math
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: math/comb_perm.hpp
+      title: math/comb_perm.hpp
+    - icon: ':heavy_check_mark:'
+      path: math/modint.hpp
+      title: math/modint.hpp
+    - icon: ':warning:'
+      path: math/modint1000000007.hpp
+      title: math/modint1000000007.hpp
+    - icon: ':warning:'
+      path: math/modint998244353.hpp
+      title: math/modint998244353.hpp
   - name: template
     pages:
     - icon: ':heavy_check_mark:'
@@ -32,6 +46,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/bi_connected_components.test.cpp
       title: test/LibraryChecker/bi_connected_components.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
+      title: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/strongly_connected_components.test.cpp
       title: test/LibraryChecker/strongly_connected_components.test.cpp

@@ -30,44 +30,44 @@ data:
     #define pii pair<int,int>\n#define pli pair<ll,int>\n#define pil pair<int,ll>\n\
     #define pll pair<ll,ll>\n#define ti3 tuple<int,int,int>\n#define int128 __int128_t\n\
     #define pii128 pair<int128,int128>\nconst int inf = 1 << 30;\nconst ll linf =\
-    \ 1e18;\nconst ll mod = 1e9 + 7;\nconst db EPS = 1e-10;\nconst db pi = acos(-1);\n\
-    template<class T> bool chmin(T& x, T y){\n    if(x > y) {\n        x = y;\n  \
-    \      return true;\n    } else return false;\n}\ntemplate<class T> bool chmax(T&\
-    \ x, T y){\n    if(x < y) {\n        x = y;\n        return true;\n    } else\
-    \ return false;\n}\n\n// overload macro\n#define CAT( A, B ) A ## B\n#define SELECT(\
-    \ NAME, NUM ) CAT( NAME, NUM )\n\n#define GET_COUNT( _1, _2, _3, _4, _5, _6 /*\
-    \ ad nauseam */, COUNT, ... ) COUNT\n#define VA_SIZE( ... ) GET_COUNT( __VA_ARGS__,\
-    \ 6, 5, 4, 3, 2, 1 )\n\n#define VA_SELECT( NAME, ... ) SELECT( NAME, VA_SIZE(__VA_ARGS__)\
-    \ )(__VA_ARGS__)\n\n// rep(overload)\n#define rep( ... ) VA_SELECT(rep, __VA_ARGS__)\n\
-    #define rep2(i, n) for (int i = 0; i < int(n); i++)\n#define rep3(i, a, b) for\
-    \ (int i = a; i < int(b); i++)\n#define rep4(i, a, b, c) for (int i = a; i < int(b);\
-    \ i += c)\n\n// repll(overload)\n#define repll( ... ) VA_SELECT(repll, __VA_ARGS__)\n\
-    #define repll2(i, n) for (ll i = 0; i < (ll)(n); i++)\n#define repll3(i, a, b)\
-    \ for (ll i = a; i < (ll)(b); i++)\n#define repll4(i, a, b, c) for (ll i = a;\
-    \ i < (ll)(b); i += c)\n\n// rrep(overload)\n#define rrep( ... ) VA_SELECT(rrep,\
-    \ __VA_ARGS__)    \n#define rrep2(i, n) for (int i = n - 1; i >= 0; i--)\n#define\
-    \ rrep3(i, a, b) for (int i = b - 1; i >= a; i--)\n#define rrep4(i, a, b, c) for\
-    \ (int i = b - 1; i >= a; i -= c)\n\n// rrepll(overload)\n#define rrepll( ...\
-    \ ) VA_SELECT(rrepll, __VA_ARGS__)\n#define rrepll2(i, n) for (ll i = (ll)(n)\
-    \ - 1; i >= 0ll; i--)\n#define rrepll3(i, a, b) for (ll i = b - 1; i >= (ll)(a);\
-    \ i--)\n#define rrepll4(i, a, b, c) for (ll i = b - 1; i >= (ll)(a); i -= c)\n\
-    \n// for_earh\n#define fore(e, v) for (auto&& e : v)\n\n// vector\n#define all(v)\
-    \ v.begin(), v.end()\n#define rall(v) v.rbegin(), v.rend()\n#line 1 \"graph/undirected_graph.hpp\"\
-    \nstruct undirected_graph {\npublic:\n    int n;\n    vector<vector<int>> g;\n\
-    \n    undirected_graph(int _n = 0) : n(_n), g(_n) {}\n    void add_edge(int u,\
-    \ int v) {\n        assert(0 <= u && u < n);\n        assert(0 <= v && v < n);\n\
-    \        g[u].push_back(v);\n        g[v].push_back(u);\n    }\n};\n#line 2 \"\
-    graph/lowlink.hpp\"\n\nstruct lowlink : undirected_graph {\nprotected:\n    bool\
-    \ built = false;\n    vector<int> ord, low, aps;\n    vector<vector<int>> bridge;\n\
-    \npublic:\n    lowlink (int _n) : undirected_graph(_n), ord(_n), low(_n), aps(_n),\
-    \ bridge(_n) {}\n\n    void dfs(int v, int p, int& cnt) {\n        ord[v] = low[v]\
-    \ = cnt++;\n        int count_son = 0, p_idx = -1;\n        for (int i = 0; i\
-    \ < (int)g[v].size(); i++) {\n            int u = g[v][i];\n            if (ord[u])\
-    \ {\n                if (u != p) low[v] = min(low[v], ord[u]);\n             \
-    \   if (u == p) p_idx = i;\n            } else {\n                count_son++;\n\
-    \                dfs(u, v, cnt);\n                bridge[v][i] = ord[v] < low[u];\n\
-    \                low[v] = min(low[v], low[u]);\n                aps[v] |= ord[v]\
-    \ <= low[u];\n            }\n        }\n\n\n        if (p == -1) aps[v] = count_son\
+    \ 1e18;\nconst db EPS = 1e-10;\nconst db pi = acos(-1);\ntemplate<class T> bool\
+    \ chmin(T& x, T y){\n    if(x > y) {\n        x = y;\n        return true;\n \
+    \   } else return false;\n}\ntemplate<class T> bool chmax(T& x, T y){\n    if(x\
+    \ < y) {\n        x = y;\n        return true;\n    } else return false;\n}\n\n\
+    // overload macro\n#define CAT( A, B ) A ## B\n#define SELECT( NAME, NUM ) CAT(\
+    \ NAME, NUM )\n\n#define GET_COUNT( _1, _2, _3, _4, _5, _6 /* ad nauseam */, COUNT,\
+    \ ... ) COUNT\n#define VA_SIZE( ... ) GET_COUNT( __VA_ARGS__, 6, 5, 4, 3, 2, 1\
+    \ )\n\n#define VA_SELECT( NAME, ... ) SELECT( NAME, VA_SIZE(__VA_ARGS__) )(__VA_ARGS__)\n\
+    \n// rep(overload)\n#define rep( ... ) VA_SELECT(rep, __VA_ARGS__)\n#define rep2(i,\
+    \ n) for (int i = 0; i < int(n); i++)\n#define rep3(i, a, b) for (int i = a; i\
+    \ < int(b); i++)\n#define rep4(i, a, b, c) for (int i = a; i < int(b); i += c)\n\
+    \n// repll(overload)\n#define repll( ... ) VA_SELECT(repll, __VA_ARGS__)\n#define\
+    \ repll2(i, n) for (ll i = 0; i < (ll)(n); i++)\n#define repll3(i, a, b) for (ll\
+    \ i = a; i < (ll)(b); i++)\n#define repll4(i, a, b, c) for (ll i = a; i < (ll)(b);\
+    \ i += c)\n\n// rrep(overload)\n#define rrep( ... ) VA_SELECT(rrep, __VA_ARGS__)\
+    \    \n#define rrep2(i, n) for (int i = n - 1; i >= 0; i--)\n#define rrep3(i,\
+    \ a, b) for (int i = b - 1; i >= a; i--)\n#define rrep4(i, a, b, c) for (int i\
+    \ = b - 1; i >= a; i -= c)\n\n// rrepll(overload)\n#define rrepll( ... ) VA_SELECT(rrepll,\
+    \ __VA_ARGS__)\n#define rrepll2(i, n) for (ll i = (ll)(n) - 1; i >= 0ll; i--)\n\
+    #define rrepll3(i, a, b) for (ll i = b - 1; i >= (ll)(a); i--)\n#define rrepll4(i,\
+    \ a, b, c) for (ll i = b - 1; i >= (ll)(a); i -= c)\n\n// for_earh\n#define fore(e,\
+    \ v) for (auto&& e : v)\n\n// vector\n#define all(v) v.begin(), v.end()\n#define\
+    \ rall(v) v.rbegin(), v.rend()\n#line 1 \"graph/undirected_graph.hpp\"\nstruct\
+    \ undirected_graph {\npublic:\n    int n;\n    vector<vector<int>> g;\n\n    undirected_graph(int\
+    \ _n = 0) : n(_n), g(_n) {}\n    void add_edge(int u, int v) {\n        assert(0\
+    \ <= u && u < n);\n        assert(0 <= v && v < n);\n        g[u].push_back(v);\n\
+    \        g[v].push_back(u);\n    }\n};\n#line 2 \"graph/lowlink.hpp\"\n\nstruct\
+    \ lowlink : undirected_graph {\nprotected:\n    bool built = false;\n    vector<int>\
+    \ ord, low, aps;\n    vector<vector<int>> bridge;\n\npublic:\n    lowlink (int\
+    \ _n) : undirected_graph(_n), ord(_n), low(_n), aps(_n), bridge(_n) {}\n\n   \
+    \ void dfs(int v, int p, int& cnt) {\n        ord[v] = low[v] = cnt++;\n     \
+    \   int count_son = 0, p_idx = -1;\n        for (int i = 0; i < (int)g[v].size();\
+    \ i++) {\n            int u = g[v][i];\n            if (ord[u]) {\n          \
+    \      if (u != p) low[v] = min(low[v], ord[u]);\n                if (u == p)\
+    \ p_idx = i;\n            } else {\n                count_son++;\n           \
+    \     dfs(u, v, cnt);\n                bridge[v][i] = ord[v] < low[u];\n     \
+    \           low[v] = min(low[v], low[u]);\n                aps[v] |= ord[v] <=\
+    \ low[u];\n            }\n        }\n\n\n        if (p == -1) aps[v] = count_son\
     \ >= 2;\n        else bridge[v][p_idx] = ord[p] < low[v];\n    }\n\n    void build()\
     \ {\n        built = true;\n        for (int i = 0; i < n; i++) bridge[i].resize(g[i].size());\n\
     \        for (int i = 0; i < n; i++) {\n            if (ord[i]) continue;\n  \
@@ -113,7 +113,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/two_edge_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-01-15 18:09:16+09:00'
+  timestamp: '2024-01-16 15:25:47+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/two_edge_connected_components.test.cpp
