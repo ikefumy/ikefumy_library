@@ -43,29 +43,29 @@ data:
     \ i && i < (int)bridge[v].size());\n        return bridge[v][i];\n    }\n};\n\
     #line 2 \"graph/bi_connected_components.hpp\"\n\nstruct bi_connected_components\
     \ : lowlink {\n    vector<vector<int>> components;\n    vector<int> used, visited;\n\
-    \    vector<pii> tmp;\n    bi_connected_components(int _n) : lowlink(_n), used(_n),\
-    \ visited(_n) {}\n\n    void dfs(int v, int p) {\n        visited[v] = true;\n\
-    \        for (auto&& u : g[v]) {\n            if (u == p) continue;\n        \
-    \    if (!visited[u] || ord[u] < ord[v]) tmp.emplace_back(min(u, v), max(u, v));\n\
-    \            if (!visited[u]) {\n                dfs(u, v);\n                if\
-    \ (low[u] >= ord[v]) {\n                    components.emplace_back();\n     \
-    \               while (!tmp.empty()) {\n                        auto [a, b] =\
-    \ tmp.back();\n                        tmp.pop_back();\n                     \
-    \   if (!used[a]) components.back().emplace_back(a), used[a] = true;\n       \
-    \                 if (!used[b]) components.back().emplace_back(b), used[b] = true;\n\
-    \                        if (a == min(u, v) && b == max(u, v)) break;\n      \
-    \              }\n                    for (auto elem : components.back()) used[elem]\
-    \ = false;\n                }\n            }\n        }\n    }\n\n    void build()\
-    \ {\n        lowlink::build();\n        for (int v = 0; v < n; v++) {\n      \
-    \      if (visited[v]) continue;\n            dfs(v, -1);\n        }\n\n     \
-    \   for (auto c : components) {\n            for (auto v : c) {\n            \
-    \    used[v] = true;\n            }\n        }\n\n        for (int v = 0; v< n;\
-    \ v++) {\n            if (used[v]) continue;\n            components.push_back({v});\n\
+    \    vector<pair<int, int>> tmp;\n    bi_connected_components(int _n) : lowlink(_n),\
+    \ used(_n), visited(_n) {}\n\n    void dfs(int v, int p) {\n        visited[v]\
+    \ = true;\n        for (auto&& u : g[v]) {\n            if (u == p) continue;\n\
+    \            if (!visited[u] || ord[u] < ord[v]) tmp.emplace_back(min(u, v), max(u,\
+    \ v));\n            if (!visited[u]) {\n                dfs(u, v);\n         \
+    \       if (low[u] >= ord[v]) {\n                    components.emplace_back();\n\
+    \                    while (!tmp.empty()) {\n                        auto [a,\
+    \ b] = tmp.back();\n                        tmp.pop_back();\n                \
+    \        if (!used[a]) components.back().emplace_back(a), used[a] = true;\n  \
+    \                      if (!used[b]) components.back().emplace_back(b), used[b]\
+    \ = true;\n                        if (a == min(u, v) && b == max(u, v)) break;\n\
+    \                    }\n                    for (auto elem : components.back())\
+    \ used[elem] = false;\n                }\n            }\n        }\n    }\n\n\
+    \    void build() {\n        lowlink::build();\n        for (int v = 0; v < n;\
+    \ v++) {\n            if (visited[v]) continue;\n            dfs(v, -1);\n   \
+    \     }\n\n        for (auto c : components) {\n            for (auto v : c) {\n\
+    \                used[v] = true;\n            }\n        }\n\n        for (int\
+    \ v = 0; v< n; v++) {\n            if (used[v]) continue;\n            components.push_back({v});\n\
     \        }\n    }\n\n    vector<vector<int>> get_components() {\n        assert(built);\n\
     \        return components;\n    }\n};\n"
   code: "#include \"lowlink.hpp\"\n\nstruct bi_connected_components : lowlink {\n\
-    \    vector<vector<int>> components;\n    vector<int> used, visited;\n    vector<pii>\
-    \ tmp;\n    bi_connected_components(int _n) : lowlink(_n), used(_n), visited(_n)\
+    \    vector<vector<int>> components;\n    vector<int> used, visited;\n    vector<pair<int,\
+    \ int>> tmp;\n    bi_connected_components(int _n) : lowlink(_n), used(_n), visited(_n)\
     \ {}\n\n    void dfs(int v, int p) {\n        visited[v] = true;\n        for\
     \ (auto&& u : g[v]) {\n            if (u == p) continue;\n            if (!visited[u]\
     \ || ord[u] < ord[v]) tmp.emplace_back(min(u, v), max(u, v));\n            if\
@@ -90,7 +90,7 @@ data:
   isVerificationFile: false
   path: graph/bi_connected_components.hpp
   requiredBy: []
-  timestamp: '2024-01-16 15:32:53+09:00'
+  timestamp: '2024-01-16 15:39:25+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/bi_connected_components.test.cpp
