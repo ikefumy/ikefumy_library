@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: data_structure
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: data_structure/union_find.hpp
+      title: data_structure/union_find.hpp
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -55,5 +60,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/two_edge_connected_components.test.cpp
       title: test/LibraryChecker/two_edge_connected_components.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/union_find.test.cpp
+      title: test/LibraryChecker/union_find.test.cpp
 layout: toppage
 ---

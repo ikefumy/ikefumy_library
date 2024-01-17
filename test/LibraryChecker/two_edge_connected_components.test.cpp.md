@@ -113,7 +113,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/two_edge_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-01-16 15:39:25+09:00'
+  timestamp: '2024-01-17 10:43:12+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/two_edge_connected_components.test.cpp
