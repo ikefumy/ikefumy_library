@@ -2,7 +2,7 @@
 
 struct two_edge_connected_components : lowlink {
     vector<int> idx;
-    vector<vector<int>> components;
+    vector<vector<int>> comps;
     undirected_graph ng;
     two_edge_connected_components(int _n) : lowlink(_n), idx(_n, -1) {}
 
@@ -24,14 +24,14 @@ struct two_edge_connected_components : lowlink {
             dfs(v);
         }
 
-        components.resize(nn);
+        comps.resize(nn);
         for (int v = 0; v < n; v++) {
-            components[idx[v]].push_back(v);
+            comps[idx[v]].push_back(v);
         }
     }
 
-    vector<vector<int>> get_components() {
-        return components;
+    vector<vector<int>> get_comps() {
+        return comps;
     }
 
     int get_idx(int v) {

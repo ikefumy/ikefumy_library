@@ -1,7 +1,7 @@
 #include "lowlink.hpp"
 
 struct bi_connected_components : lowlink {
-    vector<vector<int>> components;
+    vector<vector<int>> comps;
     vector<int> used, visited;
     vector<pair<int, int>> tmp;
     bi_connected_components(int _n) : lowlink(_n), used(_n), visited(_n) {}
@@ -14,15 +14,15 @@ struct bi_connected_components : lowlink {
             if (!visited[u]) {
                 dfs(u, v);
                 if (low[u] >= ord[v]) {
-                    components.emplace_back();
+                    comps.emplace_back();
                     while (!tmp.empty()) {
                         auto [a, b] = tmp.back();
                         tmp.pop_back();
-                        if (!used[a]) components.back().emplace_back(a), used[a] = true;
-                        if (!used[b]) components.back().emplace_back(b), used[b] = true;
+                        if (!used[a]) comps.back().emplace_back(a), used[a] = true;
+                        if (!used[b]) comps.back().emplace_back(b), used[b] = true;
                         if (a == min(u, v) && b == max(u, v)) break;
                     }
-                    for (auto elem : components.back()) used[elem] = false;
+                    for (auto elem : comps.back()) used[elem] = false;
                 }
             }
         }
@@ -35,20 +35,20 @@ struct bi_connected_components : lowlink {
             dfs(v, -1);
         }
 
-        for (auto c : components) {
-            for (auto v : c) {
+        for (auto comp : comps) {
+            for (auto v : comp) {
                 used[v] = true;
             }
         }
 
         for (int v = 0; v< n; v++) {
             if (used[v]) continue;
-            components.push_back({v});
+            comps.push_back({v});
         }
     }
 
-    vector<vector<int>> get_components() {
+    vector<vector<int>> get_comps() {
         assert(built);
-        return components;
+        return comps;
     }
 };

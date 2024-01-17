@@ -17,7 +17,7 @@ int main() {
     }
 
     g.build();
-    auto cs = g.get_components();
+    auto cs = g.get_comps();
 
     cout << cs.size() << '\n';
     for (auto&& c : cs) {
