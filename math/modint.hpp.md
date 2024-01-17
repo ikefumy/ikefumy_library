@@ -70,7 +70,7 @@ data:
   isVerificationFile: false
   path: math/modint.hpp
   requiredBy: []
-  timestamp: '2024-01-17 10:43:12+09:00'
+  timestamp: '2024-01-17 10:48:17+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp

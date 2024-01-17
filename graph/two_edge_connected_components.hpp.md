@@ -42,38 +42,38 @@ data:
     \       assert(built);\n        assert(0 <= v && v < n);\n        assert(0 <=\
     \ i && i < (int)bridge[v].size());\n        return bridge[v][i];\n    }\n};\n\
     #line 2 \"graph/two_edge_connected_components.hpp\"\n\nstruct two_edge_connected_components\
-    \ : lowlink {\n    vector<int> idx;\n    vector<vector<int>> components;\n   \
-    \ undirected_graph ng;\n    two_edge_connected_components(int _n) : lowlink(_n),\
-    \ idx(_n, -1) {}\n\n    void dfs(int v) {\n        for (int i = 0; i < (int)g[v].size();\
-    \ i++) {\n            int u =g[v][i];\n            if (bridge[v][i] || idx[u]\
-    \ != -1) continue;\n            idx[u] = idx[v];\n            dfs(u);\n      \
-    \  }\n    }\n\n    void build() {\n        int nn = 0;\n        lowlink::build();\n\
-    \        for (int v = 0; v < n; v++) {\n            if (idx[v] != -1) continue;\n\
-    \            idx[v] = nn++;\n            dfs(v);\n        }\n\n        components.resize(nn);\n\
-    \        for (int v = 0; v < n; v++) {\n            components[idx[v]].push_back(v);\n\
-    \        }\n    }\n\n    vector<vector<int>> get_components() {\n        return\
-    \ components;\n    }\n\n    int get_idx(int v) {\n        assert(built);\n   \
-    \     return idx[v];\n    }\n};\n"
-  code: "#include \"lowlink.hpp\"\n\nstruct two_edge_connected_components : lowlink\
-    \ {\n    vector<int> idx;\n    vector<vector<int>> components;\n    undirected_graph\
+    \ : lowlink {\n    vector<int> idx;\n    vector<vector<int>> comps;\n    undirected_graph\
     \ ng;\n    two_edge_connected_components(int _n) : lowlink(_n), idx(_n, -1) {}\n\
     \n    void dfs(int v) {\n        for (int i = 0; i < (int)g[v].size(); i++) {\n\
     \            int u =g[v][i];\n            if (bridge[v][i] || idx[u] != -1) continue;\n\
     \            idx[u] = idx[v];\n            dfs(u);\n        }\n    }\n\n    void\
     \ build() {\n        int nn = 0;\n        lowlink::build();\n        for (int\
     \ v = 0; v < n; v++) {\n            if (idx[v] != -1) continue;\n            idx[v]\
-    \ = nn++;\n            dfs(v);\n        }\n\n        components.resize(nn);\n\
-    \        for (int v = 0; v < n; v++) {\n            components[idx[v]].push_back(v);\n\
-    \        }\n    }\n\n    vector<vector<int>> get_components() {\n        return\
-    \ components;\n    }\n\n    int get_idx(int v) {\n        assert(built);\n   \
-    \     return idx[v];\n    }\n};"
+    \ = nn++;\n            dfs(v);\n        }\n\n        comps.resize(nn);\n     \
+    \   for (int v = 0; v < n; v++) {\n            comps[idx[v]].push_back(v);\n \
+    \       }\n    }\n\n    vector<vector<int>> get_comps() {\n        return comps;\n\
+    \    }\n\n    int get_idx(int v) {\n        assert(built);\n        return idx[v];\n\
+    \    }\n};\n"
+  code: "#include \"lowlink.hpp\"\n\nstruct two_edge_connected_components : lowlink\
+    \ {\n    vector<int> idx;\n    vector<vector<int>> comps;\n    undirected_graph\
+    \ ng;\n    two_edge_connected_components(int _n) : lowlink(_n), idx(_n, -1) {}\n\
+    \n    void dfs(int v) {\n        for (int i = 0; i < (int)g[v].size(); i++) {\n\
+    \            int u =g[v][i];\n            if (bridge[v][i] || idx[u] != -1) continue;\n\
+    \            idx[u] = idx[v];\n            dfs(u);\n        }\n    }\n\n    void\
+    \ build() {\n        int nn = 0;\n        lowlink::build();\n        for (int\
+    \ v = 0; v < n; v++) {\n            if (idx[v] != -1) continue;\n            idx[v]\
+    \ = nn++;\n            dfs(v);\n        }\n\n        comps.resize(nn);\n     \
+    \   for (int v = 0; v < n; v++) {\n            comps[idx[v]].push_back(v);\n \
+    \       }\n    }\n\n    vector<vector<int>> get_comps() {\n        return comps;\n\
+    \    }\n\n    int get_idx(int v) {\n        assert(built);\n        return idx[v];\n\
+    \    }\n};"
   dependsOn:
   - graph/lowlink.hpp
   - graph/undirected_graph.hpp
   isVerificationFile: false
   path: graph/two_edge_connected_components.hpp
   requiredBy: []
-  timestamp: '2024-01-17 10:43:12+09:00'
+  timestamp: '2024-01-17 10:48:17+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/two_edge_connected_components.test.cpp
