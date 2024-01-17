@@ -10,6 +10,9 @@ data:
     path: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
     title: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/enumerate_quotients.test.cpp
+    title: test/LibraryChecker/enumerate_quotients.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/strongly_connected_components.test.cpp
     title: test/LibraryChecker/strongly_connected_components.test.cpp
   - icon: ':heavy_check_mark:'
@@ -83,13 +86,14 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-01-17 10:48:17+09:00'
+  timestamp: '2024-01-17 11:45:52+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
   - test/LibraryChecker/two_edge_connected_components.test.cpp
   - test/LibraryChecker/union_find.test.cpp
   - test/LibraryChecker/bi_connected_components.test.cpp
+  - test/LibraryChecker/enumerate_quotients.test.cpp
   - test/LibraryChecker/strongly_connected_components.test.cpp
 documentation_of: template/template.hpp
 layout: document

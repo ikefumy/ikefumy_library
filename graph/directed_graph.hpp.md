@@ -29,7 +29,7 @@ data:
   path: graph/directed_graph.hpp
   requiredBy:
   - graph/strongly_connected_components.hpp
-  timestamp: '2024-01-17 10:48:17+09:00'
+  timestamp: '2024-01-17 11:45:52+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/strongly_connected_components.test.cpp

@@ -40,6 +40,9 @@ data:
     - icon: ':warning:'
       path: math/modint998244353.hpp
       title: math/modint998244353.hpp
+    - icon: ':heavy_check_mark:'
+      path: math/quotient_range.hpp
+      title: math/quotient_range.hpp
   - name: template
     pages:
     - icon: ':heavy_check_mark:'
@@ -54,6 +57,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
       title: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/enumerate_quotients.test.cpp
+      title: test/LibraryChecker/enumerate_quotients.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/strongly_connected_components.test.cpp
       title: test/LibraryChecker/strongly_connected_components.test.cpp
