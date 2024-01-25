@@ -74,7 +74,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/union_find.test.cpp
   requiredBy: []
-  timestamp: '2024-01-25 12:26:13+09:00'
+  timestamp: '2024-01-25 13:44:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/union_find.test.cpp
