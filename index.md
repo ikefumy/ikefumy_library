@@ -34,6 +34,9 @@ data:
     - icon: ':warning:'
       path: math/fraction.hpp
       title: math/fraction.hpp
+    - icon: ':warning:'
+      path: math/modint(ACL).hpp
+      title: math/modint(ACL).hpp
     - icon: ':heavy_check_mark:'
       path: math/modint.hpp
       title: math/modint.hpp
