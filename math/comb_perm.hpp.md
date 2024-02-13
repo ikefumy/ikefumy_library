@@ -32,7 +32,7 @@ data:
   isVerificationFile: false
   path: math/comb_perm.hpp
   requiredBy: []
-  timestamp: '2024-02-13 23:11:05+09:00'
+  timestamp: '2024-02-13 23:42:21+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp

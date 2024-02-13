@@ -54,6 +54,9 @@ data:
       title: math/stern_brocot_tree.hpp
   - name: template
     pages:
+    - icon: ':warning:'
+      path: template/ACL.cpp
+      title: template/ACL.cpp
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
