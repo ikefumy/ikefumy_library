@@ -60,6 +60,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
+  - name: tree
+    pages:
+    - icon: ':warning:'
+      path: tree/auxiliary_tree.hpp
+      title: tree/auxiliary_tree.hpp
+    - icon: ':warning:'
+      path: tree/lowest_common_ancestor.hpp
+      title: tree/lowest_common_ancestor.hpp
   verificationCategories:
   - name: test/LibraryChecker
     pages:

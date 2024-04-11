@@ -37,13 +37,13 @@ data:
   path: graph/undirected_graph.hpp
   requiredBy:
   - graph/two_edge_connected_components.hpp
-  - graph/bi_connected_components.hpp
   - graph/lowlink.hpp
-  timestamp: '2024-02-13 23:42:21+09:00'
+  - graph/bi_connected_components.hpp
+  timestamp: '2024-04-11 18:45:59+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/LibraryChecker/two_edge_connected_components.test.cpp
   - test/LibraryChecker/bi_connected_components.test.cpp
+  - test/LibraryChecker/two_edge_connected_components.test.cpp
 documentation_of: graph/undirected_graph.hpp
 layout: document
 redirect_from:
