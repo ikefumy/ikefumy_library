@@ -1,7 +1,9 @@
-template<long long modulo>
+template<int modulo>
 struct modint {
-    long long num;
-    constexpr modint(long long a = 0) : num((a % modulo + modulo) % modulo) {}
+    int num;
+    constexpr modint(long long a = 0) : num(a % modulo + modulo) {
+        if (num >= modulo) num -= modulo;
+    }
 
     constexpr modint operator+ (const modint& rhs) const noexcept {
         return modint(*this) += rhs;
@@ -17,15 +19,17 @@ struct modint {
     }
 
     constexpr modint& operator += (const modint& rhs) noexcept {
-        num = (num + rhs.num) % modulo;
+        num = num + rhs.num;
+        if (num >= modulo) num -= modulo;
         return *this;
     }
     constexpr modint& operator -= (const modint& rhs) noexcept {
-        num = (num - rhs.num + modulo) % modulo;
+        num = num - rhs.num + modulo;
+        if (num >= modulo) num -= modulo;
         return *this;
     }
     constexpr modint& operator *= (const modint& rhs) noexcept {
-        num = num * rhs.num % modulo;
+        num = 1ll * num * rhs.num % modulo;
         return *this;
     }
     constexpr modint& operator /= (modint rhs) noexcept {
@@ -65,7 +69,8 @@ struct modint {
     
     friend istream &operator >> (istream& lhs, modint& rhs) {
         lhs >> rhs.num;
-        rhs.num = (rhs.num % modulo + modulo) % modulo;
+        rhs.num = rhs.num % modulo + modulo;
+        if (rhs.num >= modulo) rhs.num -= modulo;
         return lhs;
     }
 };
