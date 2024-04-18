@@ -1,11 +1,11 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/AOJ/1615.cpp
-    title: test/AOJ/1615.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ/1615.test.cpp
+    title: test/AOJ/1615.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/bi_connected_components.test.cpp
     title: test/LibraryChecker/bi_connected_components.test.cpp
@@ -91,9 +91,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
-  requiredBy:
-  - test/AOJ/1615.cpp
-  timestamp: '2024-04-18 09:58:37+09:00'
+  requiredBy: []
+  timestamp: '2024-04-18 10:17:27+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/union_find.test.cpp
@@ -103,6 +102,7 @@ data:
   - test/LibraryChecker/stern_brocot_tree.test.cpp
   - test/LibraryChecker/two_edge_connected_components.test.cpp
   - test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
+  - test/AOJ/1615.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:

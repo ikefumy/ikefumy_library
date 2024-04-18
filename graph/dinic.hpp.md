@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/AOJ/1615.cpp
-    title: test/AOJ/1615.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ/1615.test.cpp
+    title: test/AOJ/1615.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/dinic.hpp\"\ntemplate<class T>\nstruct Dinic {\n \
@@ -62,11 +62,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: graph/dinic.hpp
-  requiredBy:
-  - test/AOJ/1615.cpp
-  timestamp: '2024-04-18 09:58:37+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  requiredBy: []
+  timestamp: '2024-04-18 10:17:27+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/AOJ/1615.test.cpp
 documentation_of: graph/dinic.hpp
 layout: document
 redirect_from:

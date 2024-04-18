@@ -11,7 +11,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/bi_connected_components.hpp
       title: graph/bi_connected_components.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: graph/dinic.hpp
       title: graph/dinic.hpp
     - icon: ':heavy_check_mark:'
@@ -20,7 +20,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/lowlink.hpp
       title: graph/lowlink.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: graph/max_flow_lb.hpp
       title: graph/max_flow_lb.hpp
     - icon: ':heavy_check_mark:'
@@ -66,11 +66,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
-  - name: test/AOJ
-    pages:
-    - icon: ':warning:'
-      path: test/AOJ/1615.cpp
-      title: test/AOJ/1615.cpp
   - name: tree
     pages:
     - icon: ':warning:'
@@ -80,6 +75,11 @@ data:
       path: tree/lowest_common_ancestor.hpp
       title: tree/lowest_common_ancestor.hpp
   verificationCategories:
+  - name: test/AOJ
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ/1615.test.cpp
+      title: test/AOJ/1615.test.cpp
   - name: test/LibraryChecker
     pages:
     - icon: ':heavy_check_mark:'
