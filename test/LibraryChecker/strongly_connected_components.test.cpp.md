@@ -26,9 +26,9 @@ data:
     \ ull unsigned long long\n#define db double\n#define pii pair<int,int>\n#define\
     \ pli pair<ll,int>\n#define pil pair<int,ll>\n#define pll pair<ll,ll>\n#define\
     \ ti3 tuple<int,int,int>\n#define int128 __int128_t\n#define pii128 pair<int128,int128>\n\
-    const int inf = 1 << 30;\nconst ll linf = 1e18;\nconst db EPS = 1e-10;\nconst\
-    \ db pi = acos(-1);\ntemplate<class T> bool chmin(T& x, T y){\n    if(x > y) {\n\
-    \        x = y;\n        return true;\n    } else return false;\n}\ntemplate<class\
+    const int inf = 1 << 30;\nconst ll linf = (ll)4e18 + 10;\nconst db EPS = 1e-10;\n\
+    const db pi = acos(-1);\ntemplate<class T> bool chmin(T& x, T y){\n    if(x >\
+    \ y) {\n        x = y;\n        return true;\n    } else return false;\n}\ntemplate<class\
     \ T> bool chmax(T& x, T y){\n    if(x < y) {\n        x = y;\n        return true;\n\
     \    } else return false;\n}\n\n// overload macro\n#define CAT( A, B ) A ## B\n\
     #define SELECT( NAME, NUM ) CAT( NAME, NUM )\n\n#define GET_COUNT( _1, _2, _3,\
@@ -93,7 +93,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/strongly_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-04-17 03:06:36+09:00'
+  timestamp: '2024-04-18 09:58:37+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/strongly_connected_components.test.cpp

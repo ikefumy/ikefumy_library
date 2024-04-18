@@ -11,12 +11,18 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/bi_connected_components.hpp
       title: graph/bi_connected_components.hpp
+    - icon: ':warning:'
+      path: graph/dinic.hpp
+      title: graph/dinic.hpp
     - icon: ':heavy_check_mark:'
       path: graph/directed_graph.hpp
       title: graph/directed_graph.hpp
     - icon: ':heavy_check_mark:'
       path: graph/lowlink.hpp
       title: graph/lowlink.hpp
+    - icon: ':warning:'
+      path: graph/max_flow_lb.hpp
+      title: graph/max_flow_lb.hpp
     - icon: ':heavy_check_mark:'
       path: graph/strongly_connected_components.hpp
       title: graph/strongly_connected_components.hpp
@@ -60,6 +66,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
+  - name: test/AOJ
+    pages:
+    - icon: ':warning:'
+      path: test/AOJ/1615.cpp
+      title: test/AOJ/1615.cpp
   - name: tree
     pages:
     - icon: ':warning:'

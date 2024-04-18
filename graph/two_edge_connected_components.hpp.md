@@ -73,7 +73,7 @@ data:
   isVerificationFile: false
   path: graph/two_edge_connected_components.hpp
   requiredBy: []
-  timestamp: '2024-04-17 03:06:36+09:00'
+  timestamp: '2024-04-18 09:58:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/two_edge_connected_components.test.cpp
