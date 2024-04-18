@@ -11,7 +11,7 @@ using namespace std;
 #define int128 __int128_t
 #define pii128 pair<int128,int128>
 const int inf = 1 << 30;
-const ll linf = 1e18;
+const ll linf = (ll)4e18 + 10;
 const db EPS = 1e-10;
 const db pi = acos(-1);
 template<class T> bool chmin(T& x, T y){
