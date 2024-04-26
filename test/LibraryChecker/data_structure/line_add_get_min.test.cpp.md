@@ -58,23 +58,24 @@ data:
     \ x_max(_x_max), root(nullptr) {\n        Node::pool = new Node[NODES];\n    \
     \    root = new Node();\n    }\n\n    void add_line (T a, T b) {\n        add_seg({a,\
     \ b}, x_min, x_max, root, x_min, x_max);\n    }\n\n    void add_seg (T a, T b,\
-    \ T l, T r) {\n        add_seg({a, b}, l, r, root, x_min, x_max);\n    }\n\n \
-    \   void add_seg (Line x, T a, T b, Node *node, T l, T r) {\n        if (b <=\
-    \ l || r <= a) return;\n        if (a <= l && r <= b) {\n            if (node->x.get_val(l)\
-    \ >= x.get_val(l) && node->x.get_val(r - 1) >= x.get_val(r - 1)) {\n         \
-    \       node->x = x;\n                return;\n            }\n            if (node->x.get_val(l)\
-    \ <= x.get_val(l) && node->x.get_val(r - 1) <= x.get_val(r - 1)) {\n         \
-    \       return;\n            }\n        }\n        if (node->l == nullptr) node->l\
-    \ = new Node();\n        if (node->r == nullptr) node->r = new Node();\n     \
-    \   add_seg(x, a, b, node->l, l, (l + r) / 2);\n        add_seg(x, a, b, node->r,\
-    \ (l + r) / 2, r);\n    }\n\n    T get_min (T i) {\n        return get_min(i,\
-    \ root, x_min, x_max);\n    }\n\n    T get_min (T i, Node *node, T l, T r) {\n\
-    \        if (i < l || r <= i) return e;\n        if (i <= l && r <= i + 1) return\
-    \ node->x.get_val(i);\n        T ret = (node->x.a != e ? node->x.get_val(i) :\
-    \ e);\n        if (node->l != nullptr) ret = min(ret, get_min(i, node->l, l, (l\
-    \ + r) / 2));\n        if (node->r != nullptr) ret = min(ret, get_min(i, node->r,\
-    \ (l + r) / 2, r));\n        return ret;\n    }\n};\n#line 5 \"test/LibraryChecker/data_structure/line_add_get_min.test.cpp\"\
-    \n\nll N, Q, q, a, b, p;\nint main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
+    \ T l, T r) {\n        add_seg({a, b}, l, r, root, x_min, x_max);\n    }\n   \
+    \ \n    T get_min (T i) {\n        return get_min(i, root, x_min, x_max);\n  \
+    \  }\n\nprivate:\n    void add_seg (Line x, T a, T b, Node *node, T l, T r) {\n\
+    \        if (b <= l || r <= a) return;\n        if (a <= l && r <= b) {\n    \
+    \        if (node->x.get_val(l) >= x.get_val(l) && node->x.get_val(r - 1) >= x.get_val(r\
+    \ - 1)) {\n                node->x = x;\n                return;\n           \
+    \ }\n            if (node->x.get_val(l) <= x.get_val(l) && node->x.get_val(r -\
+    \ 1) <= x.get_val(r - 1)) {\n                return;\n            }\n        }\n\
+    \        if (node->l == nullptr) node->l = new Node();\n        if (node->r ==\
+    \ nullptr) node->r = new Node();\n        add_seg(x, a, b, node->l, l, (l + r)\
+    \ / 2);\n        add_seg(x, a, b, node->r, (l + r) / 2, r);\n    }\n\n    T get_min\
+    \ (T i, Node *node, T l, T r) {\n        if (i < l || r <= i) return e;\n    \
+    \    if (i <= l && r <= i + 1) return node->x.get_val(i);\n        T ret = (node->x.a\
+    \ != e ? node->x.get_val(i) : e);\n        if (node->l != nullptr) ret = min(ret,\
+    \ get_min(i, node->l, l, (l + r) / 2));\n        if (node->r != nullptr) ret =\
+    \ min(ret, get_min(i, node->r, (l + r) / 2, r));\n        return ret;\n    }\n\
+    };\n#line 5 \"test/LibraryChecker/data_structure/line_add_get_min.test.cpp\"\n\
+    \nll N, Q, q, a, b, p;\nint main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
     \    cout << fixed << setprecision(20);\n    cin >> N >> Q;\n    dynamic_li_chao_tree<ll,\
     \ linf, 2000000> dlct(-inf, inf);\n    rep (i, N) {\n        cin >> a >> b;\n\
     \        dlct.add_line(a, b);\n    }\n\n    rep (_, Q) {\n        cin >> q;\n\
@@ -96,7 +97,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 05:43:46+09:00'
+  timestamp: '2024-04-27 06:32:39+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
