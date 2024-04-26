@@ -1,4 +1,4 @@
-#include "../graph/undirected.hpp"
+#include "../graph/undirected_graph.hpp"
 
 struct lowest_common_ancestor : undirected_graph {
     bool built = false;
