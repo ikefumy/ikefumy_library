@@ -1,19 +1,20 @@
-template<class T>
-struct Dinic {
+template<class F>
+struct dinic {
     struct edge {
-        int to, rev;
-        T cap;
+        int to;
+        F cap;
+        int rev;
         edge(){}
-        edge(int to, T cap, int rev) : to(to), cap(cap), rev(rev) {}
+        edge(int to, F cap, int rev) : to(to), cap(cap), rev(rev) {}
     };
 
     vector<vector<edge>> g;
     vector<int> level;
     vector<int> iter;
     
-    Dinic(int v) : g(v), level(v), iter(v) {}
+    dinic(int v) : g(v), level(v), iter(v) {}
  
-    void add_edge(int from, int to, ll cap) {
+    void add_edge(int from, int to, F cap) {
         g[from].push_back({to, cap, (int)g[to].size()});
         g[to].push_back({from, 0, (int)g[from].size() - 1});
     }
@@ -35,7 +36,7 @@ struct Dinic {
         }
     }
  
-    T dfs(int v, int t, T f) {
+    F dfs(int v, int t, F f) {
         if (v == t) return f;
         for (int &i = iter[v]; i < (int)g[v].size(); i++) {
             edge &e = g[v][i];
@@ -51,13 +52,13 @@ struct Dinic {
         return 0;
     }
  
-    T max_flow(int s, int t) {
-        T flow = 0;
+    F max_flow(int s, int t) {
+        F flow = 0;
         while(true) {
             bfs(s);
             if (level[t] < 0) return flow;
             fill(iter.begin(), iter.end(), 0);
-            T f;
+            F f;
             while ((f = dfs(s, t, inf)) > 0) {
                 flow += f;
             }

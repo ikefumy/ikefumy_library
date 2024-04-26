@@ -3,7 +3,7 @@
 struct bipartite_graph_matching {
     int L, R;
     vector<int> mxl, mxr;
-    Dinic<int> f;
+    dinic<int> f;
     bipartite_graph_matching (int l, int r) : L(l), R(r), mxl(l, 1), mxr(r, 1), f(l + r + 2) {};
 
     void add_edge(int u, int v) {
