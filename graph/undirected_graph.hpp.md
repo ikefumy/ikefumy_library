@@ -11,6 +11,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/two_edge_connected_components.hpp
     title: graph/two_edge_connected_components.hpp
+  - icon: ':heavy_check_mark:'
+    path: tree/lowest_common_ancestor.hpp
+    title: tree/lowest_common_ancestor.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/graph/bi_connected_components.test.cpp
@@ -18,6 +21,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/graph/two_edge_connected_components.test.cpp
     title: test/LibraryChecker/graph/two_edge_connected_components.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
+    title: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -39,11 +45,13 @@ data:
   - graph/bi_connected_components.hpp
   - graph/lowlink.hpp
   - graph/two_edge_connected_components.hpp
-  timestamp: '2024-04-27 00:51:07+09:00'
+  - tree/lowest_common_ancestor.hpp
+  timestamp: '2024-04-27 01:01:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/bi_connected_components.test.cpp
   - test/LibraryChecker/graph/two_edge_connected_components.test.cpp
+  - test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
 documentation_of: graph/undirected_graph.hpp
 layout: document
 redirect_from:

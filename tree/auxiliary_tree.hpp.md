@@ -15,9 +15,9 @@ data:
     , line 401, in update\n    self.update(self._resolve(pathlib.Path(included), included_from=path))\n\
     \  File \"/home/runner/.local/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: /lowest_common_tree.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: /lowest_common_ancestor.hpp:\
     \ line -1: no such header\n"
-  code: "#include \"/lowest_common_tree.hpp\"\n\nstruct auxiliary_tree : lowest_common_ancestor\
+  code: "#include \"/lowest_common_ancestor.hpp\"\n\nstruct auxiliary_tree : lowest_common_ancestor\
     \ {\n    vector<int> used;\n    auxiliary_tree(int _n) : lowest_common_ancestor(_n),\
     \ used(_n) {}\n    void build() {\n        lowest_common_ancestor::build();\n\
     \    }\n\n    pair<vector<vector<int>>, vector<int>> get_at(vector<int> v) {\n\

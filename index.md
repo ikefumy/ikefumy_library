@@ -77,7 +77,7 @@ data:
     - icon: ':warning:'
       path: tree/auxiliary_tree.hpp
       title: tree/auxiliary_tree.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: tree/lowest_common_ancestor.hpp
       title: tree/lowest_common_ancestor.hpp
   verificationCategories:
@@ -121,7 +121,7 @@ data:
       title: test/LibraryChecker/math/stern_brocot_tree.test.cpp
   - name: test/LibraryChecker/tree
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
       title: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
 layout: toppage

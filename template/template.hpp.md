@@ -33,6 +33,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/math/stern_brocot_tree.test.cpp
     title: test/LibraryChecker/math/stern_brocot_tree.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
+    title: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -98,7 +101,7 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-04-27 00:51:07+09:00'
+  timestamp: '2024-04-27 01:01:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/strongly_connected_components.test.cpp
@@ -110,6 +113,7 @@ data:
   - test/LibraryChecker/math/enumerate_quotients.test.cpp
   - test/LibraryChecker/math/stern_brocot_tree.test.cpp
   - test/LibraryChecker/math/binomial_coefficient(Prime_Mod).test.cpp
+  - test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
   - test/AOJ/1615.test.cpp
 documentation_of: template/template.hpp
 layout: document
