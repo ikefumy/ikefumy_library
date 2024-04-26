@@ -83,7 +83,7 @@ data:
   isVerificationFile: false
   path: data_structure/persistent_segment_tree.hpp
   requiredBy: []
-  timestamp: '2024-04-27 00:34:36+09:00'
+  timestamp: '2024-04-27 00:51:07+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: data_structure/persistent_segment_tree.hpp

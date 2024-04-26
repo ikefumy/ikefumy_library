@@ -21,10 +21,10 @@ data:
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/lca\"\n\n#include \"../../../template/template.hpp\"\
     \n#include \"../../../tree/lowest_common_ancestor.hpp\"\n\nint N, Q, p, u, v;\n\
     int main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n \
-    \   cout << fixed << setprecision(20);\n    cin >> N >> Q;\n    LCA lca(N);\n\
-    \    rep (i, 1, N) {\n        cin >> p;\n        lca.add_edge(i, p);\n    }\n\n\
-    \    lca.build();\n    rep (i, Q) {\n        cin >> u >> v;\n        cout << lca.get_lca(u,\
-    \ v) << '\\n';\n    }\n}"
+    \   cout << fixed << setprecision(20);\n    cin >> N >> Q;\n    lowest_common_ancestor\
+    \ lca(N);\n    rep (i, 1, N) {\n        cin >> p;\n        lca.add_edge(i, p);\n\
+    \    }\n\n    lca.build();\n    rep (i, Q) {\n        cin >> u >> v;\n       \
+    \ cout << lca.get_lca(u, v) << '\\n';\n    }\n}"
   dependsOn: []
   isVerificationFile: true
   path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
