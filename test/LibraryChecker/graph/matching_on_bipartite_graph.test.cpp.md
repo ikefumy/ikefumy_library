@@ -4,10 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/bipartite_graph_matching.hpp
     title: graph/bipartite_graph_matching.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: graph/dinic.hpp
     title: graph/dinic.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template/template.hpp
     title: template/template.hpp
   _extendedRequiredBy: []
@@ -108,7 +108,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 05:08:37+09:00'
+  timestamp: '2024-04-27 05:43:46+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp

@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: math/stern_brocot_tree.hpp
     title: math/stern_brocot_tree.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template/template.hpp
     title: template/template.hpp
   _extendedRequiredBy: []
@@ -123,7 +123,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/math/stern_brocot_tree.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 05:08:37+09:00'
+  timestamp: '2024-04-27 05:43:46+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/math/stern_brocot_tree.test.cpp

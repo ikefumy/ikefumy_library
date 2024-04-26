@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/strongly_connected_components.hpp
     title: graph/strongly_connected_components.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template/template.hpp
     title: template/template.hpp
   _extendedRequiredBy: []
@@ -93,7 +93,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/graph/strongly_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 05:08:37+09:00'
+  timestamp: '2024-04-27 05:43:46+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/graph/strongly_connected_components.test.cpp

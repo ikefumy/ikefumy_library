@@ -3,7 +3,7 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
     title: test/AOJ/1615.test.cpp
   - icon: ':heavy_check_mark:'
@@ -39,9 +39,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
     title: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template/template.hpp\"\n#include<bits/stdc++.h>\nusing\
@@ -104,8 +104,8 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-04-27 05:08:37+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  timestamp: '2024-04-27 05:43:46+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   - test/LibraryChecker/graph/strongly_connected_components.test.cpp

@@ -20,7 +20,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/bipartite_graph_matching.hpp
       title: graph/bipartite_graph_matching.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: graph/dinic.hpp
       title: graph/dinic.hpp
     - icon: ':heavy_check_mark:'
@@ -29,7 +29,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/lowlink.hpp
       title: graph/lowlink.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: graph/max_flow_lb.hpp
       title: graph/max_flow_lb.hpp
     - icon: ':heavy_check_mark:'
@@ -75,7 +75,7 @@ data:
     - icon: ':warning:'
       path: template/ACL.cpp
       title: template/ACL.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   - name: tree
@@ -89,7 +89,7 @@ data:
   verificationCategories:
   - name: test/AOJ
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ/1615.test.cpp
       title: test/AOJ/1615.test.cpp
   - name: test/LibraryChecker/data_structure

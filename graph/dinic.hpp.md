@@ -6,15 +6,15 @@ data:
     path: graph/bipartite_graph_matching.hpp
     title: graph/bipartite_graph_matching.hpp
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
     title: test/AOJ/1615.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
     title: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/dinic.hpp\"\ntemplate<class F>\nstruct dinic {\n \
@@ -70,8 +70,8 @@ data:
   path: graph/dinic.hpp
   requiredBy:
   - graph/bipartite_graph_matching.hpp
-  timestamp: '2024-04-27 05:08:37+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  timestamp: '2024-04-27 05:43:46+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   - test/AOJ/1615.test.cpp
