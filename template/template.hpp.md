@@ -104,7 +104,7 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-04-27 04:38:59+09:00'
+  timestamp: '2024-04-27 04:52:48+09:00'
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp

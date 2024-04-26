@@ -34,7 +34,7 @@ data:
   isVerificationFile: false
   path: graph/max_flow_lb.hpp
   requiredBy: []
-  timestamp: '2024-04-27 04:38:59+09:00'
+  timestamp: '2024-04-27 04:52:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ/1615.test.cpp

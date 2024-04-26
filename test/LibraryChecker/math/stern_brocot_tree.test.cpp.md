@@ -123,7 +123,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/math/stern_brocot_tree.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 04:38:59+09:00'
+  timestamp: '2024-04-27 04:52:48+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/math/stern_brocot_tree.test.cpp
