@@ -1,6 +1,6 @@
 template<class F>
 struct max_flow_lb {
-    Dinic<F> f;
+    dinic<F> f;
     int S, T;
     F sum_lb;
 
