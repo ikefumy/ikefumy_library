@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/segment_add_get_min"
 
-#include "../../template/template.hpp"
-#include "../../data_structure/li_chao_tree.hpp"
+#include "../../../template/template.hpp"
+#include "../../../data_structure/li_chao_tree.hpp"
 
 ll N, Q, q, l, r, a, b, p;
 int main() {

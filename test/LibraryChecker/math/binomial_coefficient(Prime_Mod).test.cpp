@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/binomial_coefficient_prime_mod"
 
-#include "../../template/template.hpp"
-#include "../../math/modint.hpp"
-#include "../../math/comb_perm.hpp"
+#include "../../../template/template.hpp"
+#include "../../../math/modint.hpp"
+#include "../../../math/comb_perm.hpp"
 
 int T, m;
 int main() {

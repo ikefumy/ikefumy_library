@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/stern_brocot_tree"
 
-#include "../../template/template.hpp"
-#include "../../math/stern_brocot_tree.hpp"
+#include "../../../template/template.hpp"
+#include "../../../math/stern_brocot_tree.hpp"
 
 ll k, a, b, c, d;
 int main() {

@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/biconnected_components"
 
-#include "../../template/template.hpp"
-#include "../../graph/bi_connected_components.hpp"
+#include "../../../template/template.hpp"
+#include "../../../graph/bi_connected_components.hpp"
 
 int N, M;
 int main() {

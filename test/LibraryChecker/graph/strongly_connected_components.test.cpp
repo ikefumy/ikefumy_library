@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/scc"
 
-#include "../../template/template.hpp"
-#include "../../graph/strongly_connected_components.hpp"
+#include "../../../template/template.hpp"
+#include "../../../graph/strongly_connected_components.hpp"
 
 int N, M;
 vector<int> cs[500010];

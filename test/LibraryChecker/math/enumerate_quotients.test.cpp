@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/enumerate_quotients"
 
-#include "../../template/template.hpp"
-#include "../../math/quotient_range.hpp"
+#include "../../../template/template.hpp"
+#include "../../../math/quotient_range.hpp"
 
 int main() {
     cin.tie(nullptr);
