@@ -3,7 +3,7 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/AOJ/1615.test.cpp
     title: test/AOJ/1615.test.cpp
   - icon: ':heavy_check_mark:'
@@ -18,7 +18,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/graph/bi_connected_components.test.cpp
     title: test/LibraryChecker/graph/bi_connected_components.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
     title: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   - icon: ':heavy_check_mark:'
@@ -104,7 +104,7 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-04-27 04:52:48+09:00'
+  timestamp: '2024-04-27 05:08:37+09:00'
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp

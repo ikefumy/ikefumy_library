@@ -28,7 +28,7 @@ data:
   isVerificationFile: false
   path: math/quotient_range.hpp
   requiredBy: []
-  timestamp: '2024-04-27 04:52:48+09:00'
+  timestamp: '2024-04-27 05:08:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/math/enumerate_quotients.test.cpp

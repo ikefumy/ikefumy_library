@@ -69,7 +69,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/math/enumerate_quotients.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 04:52:48+09:00'
+  timestamp: '2024-04-27 05:08:37+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/math/enumerate_quotients.test.cpp

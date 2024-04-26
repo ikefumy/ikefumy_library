@@ -17,7 +17,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/bi_connected_components.hpp
       title: graph/bi_connected_components.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: graph/bipartite_graph_matching.hpp
       title: graph/bipartite_graph_matching.hpp
     - icon: ':question:'
@@ -29,7 +29,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/lowlink.hpp
       title: graph/lowlink.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: graph/max_flow_lb.hpp
       title: graph/max_flow_lb.hpp
     - icon: ':heavy_check_mark:'
@@ -89,7 +89,7 @@ data:
   verificationCategories:
   - name: test/AOJ
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ/1615.test.cpp
       title: test/AOJ/1615.test.cpp
   - name: test/LibraryChecker/data_structure
@@ -108,7 +108,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/graph/bi_connected_components.test.cpp
       title: test/LibraryChecker/graph/bi_connected_components.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
       title: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
     - icon: ':heavy_check_mark:'

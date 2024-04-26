@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/AOJ/1615.test.cpp
     title: test/AOJ/1615.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/max_flow_lb.hpp\"\ntemplate<class F>\nstruct max_flow_lb\
@@ -34,8 +34,8 @@ data:
   isVerificationFile: false
   path: graph/max_flow_lb.hpp
   requiredBy: []
-  timestamp: '2024-04-27 04:52:48+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  timestamp: '2024-04-27 05:08:37+09:00'
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/AOJ/1615.test.cpp
 documentation_of: graph/max_flow_lb.hpp
