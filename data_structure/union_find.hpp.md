@@ -34,7 +34,7 @@ data:
   isVerificationFile: false
   path: data_structure/union_find.hpp
   requiredBy: []
-  timestamp: '2024-04-18 10:17:27+09:00'
+  timestamp: '2024-04-26 18:28:59+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/union_find.test.cpp

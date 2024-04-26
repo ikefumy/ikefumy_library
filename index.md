@@ -3,6 +3,9 @@ data:
   libraryCategories:
   - name: data_structure
     pages:
+    - icon: ':warning:'
+      path: data_structure/persistent_segment_tree.hpp
+      title: data_structure/persistent_segment_tree.hpp
     - icon: ':heavy_check_mark:'
       path: data_structure/union_find.hpp
       title: data_structure/union_find.hpp
