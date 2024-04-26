@@ -35,7 +35,12 @@ struct dynamic_li_chao_tree {
     void add_seg (T a, T b, T l, T r) {
         add_seg({a, b}, l, r, root, x_min, x_max);
     }
+    
+    T get_min (T i) {
+        return get_min(i, root, x_min, x_max);
+    }
 
+private:
     void add_seg (Line x, T a, T b, Node *node, T l, T r) {
         if (b <= l || r <= a) return;
         if (a <= l && r <= b) {
@@ -51,10 +56,6 @@ struct dynamic_li_chao_tree {
         if (node->r == nullptr) node->r = new Node();
         add_seg(x, a, b, node->l, l, (l + r) / 2);
         add_seg(x, a, b, node->r, (l + r) / 2, r);
-    }
-
-    T get_min (T i) {
-        return get_min(i, root, x_min, x_max);
     }
 
     T get_min (T i, Node *node, T l, T r) {
