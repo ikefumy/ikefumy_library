@@ -40,6 +40,9 @@ data:
       title: graph/undirected_graph.hpp
   - name: math
     pages:
+    - icon: ':warning:'
+      path: math/big_modint.hpp
+      title: math/big_modint.hpp
     - icon: ':heavy_check_mark:'
       path: math/comb_perm.hpp
       title: math/comb_perm.hpp

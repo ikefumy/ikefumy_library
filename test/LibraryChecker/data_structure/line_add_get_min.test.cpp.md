@@ -96,7 +96,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 01:01:36+09:00'
+  timestamp: '2024-04-27 01:22:49+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
