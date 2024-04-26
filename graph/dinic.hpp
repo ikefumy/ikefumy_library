@@ -7,15 +7,15 @@ struct Dinic {
         edge(int to, T cap, int rev) : to(to), cap(cap), rev(rev) {}
     };
 
-    vector<vector<edge>> G;
+    vector<vector<edge>> g;
     vector<int> level;
     vector<int> iter;
     
-    Dinic(int v) : G(v), level(v), iter(v) {}
+    Dinic(int v) : g(v), level(v), iter(v) {}
  
     void add_edge(int from, int to, ll cap) {
-        G[from].push_back({to, cap, (int)G[to].size()});
-        G[to].push_back({from, 0, (int)G[from].size() - 1});
+        g[from].push_back({to, cap, (int)g[to].size()});
+        g[to].push_back({from, 0, (int)g[from].size() - 1});
     }
  
     void bfs(int s) {
@@ -26,7 +26,7 @@ struct Dinic {
         while (!que.empty()) {
             int v = que.front();
             que.pop();
-            for (auto& e : G[v]) {
+            for (auto& e : g[v]) {
                 if (e.cap > 0 && level[e.to] < 0) {
                     level[e.to] = level[v] + 1;
                     que.push(e.to);
@@ -37,13 +37,13 @@ struct Dinic {
  
     T dfs(int v, int t, T f) {
         if (v == t) return f;
-        for (int &i = iter[v]; i < (int)G[v].size(); i++) {
-            edge &e = G[v][i];
+        for (int &i = iter[v]; i < (int)g[v].size(); i++) {
+            edge &e = g[v][i];
             if (e.cap > 0 && level[v] < level[e.to]) {
                 int d = dfs(e.to, t, min(f, e.cap));
                 if (d > 0) {
                     e.cap -= d;
-                    G[e.to][e.rev].cap += d;
+                    g[e.to][e.rev].cap += d;
                     return d;
                 }
             }
@@ -66,6 +66,6 @@ struct Dinic {
     }
 
     vector<vector<edge>> get_g() {
-        return G;
+        return g;
     }
 };
