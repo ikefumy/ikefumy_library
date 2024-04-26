@@ -28,7 +28,7 @@ struct bipartite_graph_matching {
         vector<pair<int, int>> ret;
         for (int i = 0; i < L; i++) {
             for (auto [v, cap, _] : g[i]) {
-                if (cap == 0) ret.emplace_back(i, v - L);
+                if (cap == 0 && v < L + R) ret.emplace_back(i, v - L);
             }
         }
         return ret;
