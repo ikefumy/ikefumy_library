@@ -1,24 +1,26 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: graph/bipartite_graph_matching.hpp
     title: graph/bipartite_graph_matching.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: graph/dinic.hpp
     title: graph/dinic.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template/template.hpp
     title: template/template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/bipartitematching
     links:
     - https://judge.yosupo.jp/problem/bipartitematching
-  bundledCode: "#line 1 \"test/LibraryChecker/graph/matching_on_bipartite_graph.cpp\"\
+  bundledCode: "#line 1 \"test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/bipartitematching\"\n\n#line\
     \ 1 \"template/template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ll long long\n#define ull unsigned long long\n#define db double\n#define\
@@ -83,7 +85,7 @@ data:
     \        auto g = f.get_g();\n        vector<pair<int, int>> ret;\n        for\
     \ (int i = 0; i < L; i++) {\n            for (auto [v, cap, _] : g[i]) {\n   \
     \             if (cap == 0) ret.emplace_back(i, v - L);\n            }\n     \
-    \   }\n        return ret;\n    }\n};\n#line 5 \"test/LibraryChecker/graph/matching_on_bipartite_graph.cpp\"\
+    \   }\n        return ret;\n    }\n};\n#line 5 \"test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp\"\
     \n\nint L, R, M;\nint main() {\n    cin.tie(nullptr);\n    ios_base::sync_with_stdio(false);\n\
     \    cout << fixed << setprecision(20);\n    cin >> L >> R >> M;\n    bipartite_graph_matching\
     \ bgm(L, R);\n    rep (i, M) {\n        int u, v;\n        cin >> u >> v;\n  \
@@ -102,16 +104,16 @@ data:
   - template/template.hpp
   - graph/bipartite_graph_matching.hpp
   - graph/dinic.hpp
-  isVerificationFile: false
-  path: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
+  isVerificationFile: true
+  path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 04:27:49+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2024-04-27 04:38:59+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
+documentation_of: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
 layout: document
 redirect_from:
-- /library/test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
-- /library/test/LibraryChecker/graph/matching_on_bipartite_graph.cpp.html
-title: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
+- /verify/test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
+- /verify/test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp.html
+title: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
 ---

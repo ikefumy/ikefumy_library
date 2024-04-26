@@ -103,7 +103,7 @@ data:
   isVerificationFile: false
   path: tree/auxiliary_tree.hpp
   requiredBy: []
-  timestamp: '2024-04-27 04:27:49+09:00'
+  timestamp: '2024-04-27 04:38:59+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: tree/auxiliary_tree.hpp

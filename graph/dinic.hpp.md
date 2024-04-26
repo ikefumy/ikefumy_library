@@ -2,19 +2,19 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: graph/bipartite_graph_matching.hpp
     title: graph/bipartite_graph_matching.hpp
-  - icon: ':warning:'
-    path: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
-    title: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
     title: test/AOJ/1615.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
+    title: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/dinic.hpp\"\ntemplate<class T>\nstruct Dinic {\n \
@@ -70,10 +70,10 @@ data:
   path: graph/dinic.hpp
   requiredBy:
   - graph/bipartite_graph_matching.hpp
-  - test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
-  timestamp: '2024-04-27 04:27:49+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  timestamp: '2024-04-27 04:38:59+09:00'
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   - test/AOJ/1615.test.cpp
 documentation_of: graph/dinic.hpp
 layout: document

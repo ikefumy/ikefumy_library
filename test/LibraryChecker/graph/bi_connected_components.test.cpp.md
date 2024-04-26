@@ -10,7 +10,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/undirected_graph.hpp
     title: graph/undirected_graph.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template/template.hpp
     title: template/template.hpp
   _extendedRequiredBy: []
@@ -122,7 +122,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/graph/bi_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 04:27:49+09:00'
+  timestamp: '2024-04-27 04:38:59+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/graph/bi_connected_components.test.cpp

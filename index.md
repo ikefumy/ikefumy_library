@@ -17,10 +17,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/bi_connected_components.hpp
       title: graph/bi_connected_components.hpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: graph/bipartite_graph_matching.hpp
       title: graph/bipartite_graph_matching.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: graph/dinic.hpp
       title: graph/dinic.hpp
     - icon: ':heavy_check_mark:'
@@ -75,14 +75,9 @@ data:
     - icon: ':warning:'
       path: template/ACL.cpp
       title: template/ACL.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/template.hpp
       title: template/template.hpp
-  - name: test/LibraryChecker/graph
-    pages:
-    - icon: ':warning:'
-      path: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
-      title: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
   - name: tree
     pages:
     - icon: ':warning:'
@@ -113,6 +108,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/graph/bi_connected_components.test.cpp
       title: test/LibraryChecker/graph/bi_connected_components.test.cpp
+    - icon: ':x:'
+      path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
+      title: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/graph/strongly_connected_components.test.cpp
       title: test/LibraryChecker/graph/strongly_connected_components.test.cpp

@@ -1,10 +1,7 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
-    title: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
@@ -21,6 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/graph/bi_connected_components.test.cpp
     title: test/LibraryChecker/graph/bi_connected_components.test.cpp
+  - icon: ':x:'
+    path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
+    title: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/graph/strongly_connected_components.test.cpp
     title: test/LibraryChecker/graph/strongly_connected_components.test.cpp
@@ -39,9 +39,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
     title: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template/template.hpp\"\n#include<bits/stdc++.h>\nusing\
@@ -103,11 +103,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
-  requiredBy:
-  - test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
-  timestamp: '2024-04-27 04:27:49+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  requiredBy: []
+  timestamp: '2024-04-27 04:38:59+09:00'
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   - test/LibraryChecker/graph/strongly_connected_components.test.cpp
   - test/LibraryChecker/graph/bi_connected_components.test.cpp
   - test/LibraryChecker/graph/two_edge_connected_components.test.cpp
