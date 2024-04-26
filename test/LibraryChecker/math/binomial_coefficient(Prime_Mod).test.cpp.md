@@ -107,7 +107,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/math/binomial_coefficient(Prime_Mod).test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 00:23:02+09:00'
+  timestamp: '2024-04-27 00:34:36+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/math/binomial_coefficient(Prime_Mod).test.cpp

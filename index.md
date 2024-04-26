@@ -119,5 +119,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/math/stern_brocot_tree.test.cpp
       title: test/LibraryChecker/math/stern_brocot_tree.test.cpp
+  - name: test/LibraryChecker/tree
+    pages:
+    - icon: ':x:'
+      path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
+      title: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
 layout: toppage
 ---

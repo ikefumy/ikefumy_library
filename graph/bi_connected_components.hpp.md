@@ -90,7 +90,7 @@ data:
   isVerificationFile: false
   path: graph/bi_connected_components.hpp
   requiredBy: []
-  timestamp: '2024-04-27 00:23:02+09:00'
+  timestamp: '2024-04-27 00:34:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/bi_connected_components.test.cpp
