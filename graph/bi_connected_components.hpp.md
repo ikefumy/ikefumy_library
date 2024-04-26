@@ -1,20 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':warning:'
     path: graph/lowlink.hpp
     title: graph/lowlink.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':warning:'
     path: graph/undirected_graph.hpp
     title: graph/undirected_graph.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/bi_connected_components.test.cpp
-    title: test/LibraryChecker/bi_connected_components.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/undirected_graph.hpp\"\nstruct undirected_graph {\n\
@@ -90,10 +87,9 @@ data:
   isVerificationFile: false
   path: graph/bi_connected_components.hpp
   requiredBy: []
-  timestamp: '2024-04-26 18:28:59+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/LibraryChecker/bi_connected_components.test.cpp
+  timestamp: '2024-04-27 00:19:50+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: graph/bi_connected_components.hpp
 layout: document
 redirect_from:

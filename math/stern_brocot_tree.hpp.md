@@ -2,13 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/stern_brocot_tree.test.cpp
-    title: test/LibraryChecker/stern_brocot_tree.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"math/stern_brocot_tree.hpp\"\ntemplate<class T>\nstruct\
@@ -59,10 +56,9 @@ data:
   isVerificationFile: false
   path: math/stern_brocot_tree.hpp
   requiredBy: []
-  timestamp: '2024-04-26 18:28:59+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/LibraryChecker/stern_brocot_tree.test.cpp
+  timestamp: '2024-04-27 00:19:50+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: math/stern_brocot_tree.hpp
 layout: document
 redirect_from:

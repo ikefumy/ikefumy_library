@@ -2,13 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
-    title: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"math/modint.hpp\"\nstruct mint {\n    static inline long\
@@ -70,10 +67,9 @@ data:
   isVerificationFile: false
   path: math/modint.hpp
   requiredBy: []
-  timestamp: '2024-04-26 18:28:59+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
+  timestamp: '2024-04-27 00:19:50+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: math/modint.hpp
 layout: document
 redirect_from:

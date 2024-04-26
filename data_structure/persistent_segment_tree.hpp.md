@@ -12,9 +12,9 @@ data:
     \ T, T(* op)(T, T), T(* e)(), int NODES = 2700000>\nstruct persistent_segment_tree\
     \ {\n    struct Node {\n        inline static int node_count = 0;\n        inline\
     \ static Node* pool;\n        T val;\n        Node *l, *r;\n\n        Node ()\
-    \ : val(e()), l(nullptr), r(nullptr) {}\n        void *operator new(std::size_t)\
-    \ {\n            return pool + node_count++;\n        }\n        inline static\
-    \ void delete_all() { Node::node_count = 0; }\n    };\n\n    int n;\n    vector<Node\
+    \ : val(e()), l(nullptr), r(nullptr) {}\n        void *operator new(size_t) {\n\
+    \            return pool + node_count++;\n        }\n        inline static void\
+    \ delete_all() { Node::node_count = 0; }\n    };\n\n    int n;\n    vector<Node\
     \ *> roots;\n    stack<Node *> nodes;\n    stack<tuple<Node *, int, int>> rng;\n\
     \n    persistent_segment_tree(int _n) : n(1) {\n        Node::pool = new Node[NODES];\n\
     \        while (n < _n) n *= 2;\n        roots.push_back(new Node());\n      \
@@ -47,9 +47,9 @@ data:
   code: "template<class T, T(* op)(T, T), T(* e)(), int NODES = 2700000>\nstruct persistent_segment_tree\
     \ {\n    struct Node {\n        inline static int node_count = 0;\n        inline\
     \ static Node* pool;\n        T val;\n        Node *l, *r;\n\n        Node ()\
-    \ : val(e()), l(nullptr), r(nullptr) {}\n        void *operator new(std::size_t)\
-    \ {\n            return pool + node_count++;\n        }\n        inline static\
-    \ void delete_all() { Node::node_count = 0; }\n    };\n\n    int n;\n    vector<Node\
+    \ : val(e()), l(nullptr), r(nullptr) {}\n        void *operator new(size_t) {\n\
+    \            return pool + node_count++;\n        }\n        inline static void\
+    \ delete_all() { Node::node_count = 0; }\n    };\n\n    int n;\n    vector<Node\
     \ *> roots;\n    stack<Node *> nodes;\n    stack<tuple<Node *, int, int>> rng;\n\
     \n    persistent_segment_tree(int _n) : n(1) {\n        Node::pool = new Node[NODES];\n\
     \        while (n < _n) n *= 2;\n        roots.push_back(new Node());\n      \
@@ -83,7 +83,7 @@ data:
   isVerificationFile: false
   path: data_structure/persistent_segment_tree.hpp
   requiredBy: []
-  timestamp: '2024-04-26 18:28:59+09:00'
+  timestamp: '2024-04-27 00:19:50+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: data_structure/persistent_segment_tree.hpp

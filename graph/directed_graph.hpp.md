@@ -2,16 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
+  - icon: ':warning:'
     path: graph/strongly_connected_components.hpp
     title: graph/strongly_connected_components.hpp
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/strongly_connected_components.test.cpp
-    title: test/LibraryChecker/strongly_connected_components.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/directed_graph.hpp\"\nstruct directed_graph {\n  \
@@ -29,10 +26,9 @@ data:
   path: graph/directed_graph.hpp
   requiredBy:
   - graph/strongly_connected_components.hpp
-  timestamp: '2024-04-26 18:28:59+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/LibraryChecker/strongly_connected_components.test.cpp
+  timestamp: '2024-04-27 00:19:50+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: graph/directed_graph.hpp
 layout: document
 redirect_from:

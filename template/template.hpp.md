@@ -6,27 +6,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
     title: test/AOJ/1615.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/bi_connected_components.test.cpp
-    title: test/LibraryChecker/bi_connected_components.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
-    title: test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/enumerate_quotients.test.cpp
-    title: test/LibraryChecker/enumerate_quotients.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/stern_brocot_tree.test.cpp
-    title: test/LibraryChecker/stern_brocot_tree.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/strongly_connected_components.test.cpp
-    title: test/LibraryChecker/strongly_connected_components.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/two_edge_connected_components.test.cpp
-    title: test/LibraryChecker/two_edge_connected_components.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/union_find.test.cpp
-    title: test/LibraryChecker/union_find.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -92,16 +71,9 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-04-26 18:28:59+09:00'
+  timestamp: '2024-04-27 00:19:50+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/LibraryChecker/union_find.test.cpp
-  - test/LibraryChecker/strongly_connected_components.test.cpp
-  - test/LibraryChecker/enumerate_quotients.test.cpp
-  - test/LibraryChecker/bi_connected_components.test.cpp
-  - test/LibraryChecker/stern_brocot_tree.test.cpp
-  - test/LibraryChecker/two_edge_connected_components.test.cpp
-  - test/LibraryChecker/binomial_coefficient(Prime_Mod).test.cpp
   - test/AOJ/1615.test.cpp
 documentation_of: template/template.hpp
 layout: document

@@ -70,7 +70,7 @@ data:
   isVerificationFile: false
   path: math/fraction.hpp
   requiredBy: []
-  timestamp: '2024-04-26 18:28:59+09:00'
+  timestamp: '2024-04-27 00:19:50+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: math/fraction.hpp
