@@ -17,6 +17,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/bi_connected_components.hpp
       title: graph/bi_connected_components.hpp
+    - icon: ':warning:'
+      path: graph/bipartite_graph_matching.hpp
+      title: graph/bipartite_graph_matching.hpp
     - icon: ':heavy_check_mark:'
       path: graph/dinic.hpp
       title: graph/dinic.hpp
@@ -75,6 +78,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
+  - name: test/LibraryChecker/graph
+    pages:
+    - icon: ':warning:'
+      path: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
+      title: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
   - name: tree
     pages:
     - icon: ':warning:'

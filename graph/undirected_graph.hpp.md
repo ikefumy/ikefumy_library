@@ -11,6 +11,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/two_edge_connected_components.hpp
     title: graph/two_edge_connected_components.hpp
+  - icon: ':warning:'
+    path: tree/auxiliary_tree.hpp
+    title: tree/auxiliary_tree.hpp
   - icon: ':heavy_check_mark:'
     path: tree/lowest_common_ancestor.hpp
     title: tree/lowest_common_ancestor.hpp
@@ -45,8 +48,9 @@ data:
   - graph/bi_connected_components.hpp
   - graph/lowlink.hpp
   - graph/two_edge_connected_components.hpp
+  - tree/auxiliary_tree.hpp
   - tree/lowest_common_ancestor.hpp
-  timestamp: '2024-04-27 01:22:49+09:00'
+  timestamp: '2024-04-27 04:27:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/bi_connected_components.test.cpp

@@ -4,7 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/undirected_graph.hpp
     title: graph/undirected_graph.hpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: tree/auxiliary_tree.hpp
+    title: tree/auxiliary_tree.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
@@ -114,8 +117,9 @@ data:
   - graph/undirected_graph.hpp
   isVerificationFile: false
   path: tree/lowest_common_ancestor.hpp
-  requiredBy: []
-  timestamp: '2024-04-27 01:22:49+09:00'
+  requiredBy:
+  - tree/auxiliary_tree.hpp
+  timestamp: '2024-04-27 04:27:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/tree/lowest_common_ancestor.test.cpp

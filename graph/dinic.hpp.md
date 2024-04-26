@@ -1,7 +1,13 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: graph/bipartite_graph_matching.hpp
+    title: graph/bipartite_graph_matching.hpp
+  - icon: ':warning:'
+    path: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
+    title: test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
@@ -62,8 +68,10 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: graph/dinic.hpp
-  requiredBy: []
-  timestamp: '2024-04-27 01:22:49+09:00'
+  requiredBy:
+  - graph/bipartite_graph_matching.hpp
+  - test/LibraryChecker/graph/matching_on_bipartite_graph.cpp
+  timestamp: '2024-04-27 04:27:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ/1615.test.cpp

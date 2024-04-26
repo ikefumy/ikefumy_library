@@ -93,7 +93,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/graph/strongly_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-04-27 01:22:49+09:00'
+  timestamp: '2024-04-27 04:27:49+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/graph/strongly_connected_components.test.cpp
