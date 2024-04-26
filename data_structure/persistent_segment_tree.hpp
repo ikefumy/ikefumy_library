@@ -7,7 +7,7 @@ struct persistent_segment_tree {
         Node *l, *r;
 
         Node () : val(e()), l(nullptr), r(nullptr) {}
-        void *operator new(std::size_t) {
+        void *operator new(size_t) {
             return pool + node_count++;
         }
         inline static void delete_all() { Node::node_count = 0; }
