@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/data_structure/union_find.test.cpp
+    title: test/LibraryChecker/data_structure/union_find.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"data_structure/union_find.hpp\"\nstruct union_find {\n \
@@ -31,9 +34,10 @@ data:
   isVerificationFile: false
   path: data_structure/union_find.hpp
   requiredBy: []
-  timestamp: '2024-04-27 00:19:50+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-04-27 00:23:02+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/LibraryChecker/data_structure/union_find.test.cpp
 documentation_of: data_structure/union_find.hpp
 layout: document
 redirect_from:

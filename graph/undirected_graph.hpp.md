@@ -2,19 +2,25 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: graph/bi_connected_components.hpp
     title: graph/bi_connected_components.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: graph/lowlink.hpp
     title: graph/lowlink.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: graph/two_edge_connected_components.hpp
     title: graph/two_edge_connected_components.hpp
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/graph/bi_connected_components.test.cpp
+    title: test/LibraryChecker/graph/bi_connected_components.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/graph/two_edge_connected_components.test.cpp
+    title: test/LibraryChecker/graph/two_edge_connected_components.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/undirected_graph.hpp\"\nstruct undirected_graph {\n\
@@ -33,9 +39,11 @@ data:
   - graph/bi_connected_components.hpp
   - graph/lowlink.hpp
   - graph/two_edge_connected_components.hpp
-  timestamp: '2024-04-27 00:19:50+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-04-27 00:23:02+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/LibraryChecker/graph/bi_connected_components.test.cpp
+  - test/LibraryChecker/graph/two_edge_connected_components.test.cpp
 documentation_of: graph/undirected_graph.hpp
 layout: document
 redirect_from:

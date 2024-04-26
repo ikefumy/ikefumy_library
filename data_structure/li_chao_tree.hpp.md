@@ -2,10 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
+    title: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
+    title: test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"data_structure/li_chao_tree.hpp\"\ntemplate<class T, T e,\
@@ -67,9 +73,11 @@ data:
   isVerificationFile: false
   path: data_structure/li_chao_tree.hpp
   requiredBy: []
-  timestamp: '2024-04-27 00:19:50+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-04-27 00:23:02+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
+  - test/LibraryChecker/data_structure/line_add_get_min.test.cpp
 documentation_of: data_structure/li_chao_tree.hpp
 layout: document
 redirect_from:
