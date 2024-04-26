@@ -1,4 +1,4 @@
-#include "/lowest_common_tree.hpp"
+#include "/lowest_common_ancestor.hpp"
 
 struct auxiliary_tree : lowest_common_ancestor {
     vector<int> used;
