@@ -9,7 +9,7 @@ int main() {
     ios_base::sync_with_stdio(false);
     cout << fixed << setprecision(20);
     cin >> N >> Q;
-    LCA lca(N);
+    lowest_common_ancestor lca(N);
     rep (i, 1, N) {
         cin >> p;
         lca.add_edge(i, p);
