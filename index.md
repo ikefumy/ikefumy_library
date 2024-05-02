@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: data_structure/li_chao_tree.hpp
-      title: data_structure/li_chao_tree.hpp
+      title: Li Chao Tree
     - icon: ':warning:'
       path: data_structure/persistent_segment_tree.hpp
       title: data_structure/persistent_segment_tree.hpp

@@ -75,15 +75,17 @@ data:
   isVerificationFile: false
   path: data_structure/li_chao_tree.hpp
   requiredBy: []
-  timestamp: '2024-04-27 06:32:39+09:00'
+  timestamp: '2024-05-02 17:04:51+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
   - test/LibraryChecker/data_structure/line_add_get_min.test.cpp
 documentation_of: data_structure/li_chao_tree.hpp
 layout: document
-redirect_from:
-- /library/data_structure/li_chao_tree.hpp
-- /library/data_structure/li_chao_tree.hpp.html
-title: data_structure/li_chao_tree.hpp
+title: Li Chao Tree
 ---
+
+## 参考にしたサイト
+
+[Li Chao Treeのメモ](https://smijake3.hatenablog.com/entry/2018/06/16/144548)
+[Dynamic-Li-Chao-Tree | Luzhiled's Library](https://ei1333.github.io/library/structure/convex-hull-trick/dynamic-li-chao-tree.hpp.html)
