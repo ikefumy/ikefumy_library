@@ -14,7 +14,6 @@ int main() {
         if (n == 0) break;
         vector<int> u(m), v(m);
         rep (i, m) cin >> u[i] >> v[i], u[i]--, v[i]--;
-        bool flag = false;
         int amn = 0, amx = inf;
         int mn = 0;
         rep (mx, 1, n + 1) {
