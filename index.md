@@ -8,7 +8,7 @@ data:
       title: Li Chao Tree
     - icon: ':warning:'
       path: data_structure/persistent_segment_tree.hpp
-      title: data_structure/persistent_segment_tree.hpp
+      title: "\u6C38\u7D9A\u30BB\u30B0\u6728"
     - icon: ':heavy_check_mark:'
       path: data_structure/union_find.hpp
       title: data_structure/union_find.hpp

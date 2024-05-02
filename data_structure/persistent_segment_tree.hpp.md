@@ -83,13 +83,19 @@ data:
   isVerificationFile: false
   path: data_structure/persistent_segment_tree.hpp
   requiredBy: []
-  timestamp: '2024-05-02 17:04:51+09:00'
+  timestamp: '2024-05-02 19:46:37+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: data_structure/persistent_segment_tree.hpp
 layout: document
-redirect_from:
-- /library/data_structure/persistent_segment_tree.hpp
-- /library/data_structure/persistent_segment_tree.hpp.html
-title: data_structure/persistent_segment_tree.hpp
+title: "\u6C38\u7D9A\u30BB\u30B0\u6728"
 ---
+
+## 使い方
+- `update(i, x, id)` : $id$番目に生成されたセグ木において、$i$番目の要素を$x$し、戻り値として生成したセグ木の$id$を返す。$id$を指定しなかったとき、最新のセグ木を基に生成する。
+- `prod(a, b, id)` : $id$番目に生成されたセグ木において、$i$番目の要素を$x[i]$と表したとき、$op(x[a],x[a+1],...,x[b-1])$を返す。
+
+## 参考にしたサイト
+
+- [永続セグメント木 - Nyaan's Library](https://nyaannyaan.github.io/library/segment-tree/persistent-segment-tree.hpp.html)
+- [木構造の実装テクニック #競技プログラミング](https://qiita.com/tubo28/items/f058582e457f6870a800)
