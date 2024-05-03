@@ -4,7 +4,7 @@ data:
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
     path: graph/bipartite_graph_matching.hpp
-    title: graph/bipartite_graph_matching.hpp
+    title: "\u4E8C\u90E8\u30DE\u30C3\u30C1\u30F3\u30B0"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
@@ -70,7 +70,7 @@ data:
   path: graph/dinic.hpp
   requiredBy:
   - graph/bipartite_graph_matching.hpp
-  timestamp: '2024-05-02 19:46:37+09:00'
+  timestamp: '2024-05-03 21:18:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp

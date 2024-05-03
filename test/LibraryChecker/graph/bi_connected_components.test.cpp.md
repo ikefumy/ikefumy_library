@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: graph/bi_connected_components.hpp
-    title: graph/bi_connected_components.hpp
+    title: "\u4E8C\u91CD\u9802\u70B9\u9023\u7D50\u6210\u5206\u5206\u89E3"
   - icon: ':heavy_check_mark:'
     path: graph/lowlink.hpp
     title: graph/lowlink.hpp
@@ -122,7 +122,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/graph/bi_connected_components.test.cpp
   requiredBy: []
-  timestamp: '2024-05-02 19:46:37+09:00'
+  timestamp: '2024-05-03 21:18:36+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/graph/bi_connected_components.test.cpp

@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: graph/bipartite_graph_matching.hpp
-    title: graph/bipartite_graph_matching.hpp
+    title: "\u4E8C\u90E8\u30DE\u30C3\u30C1\u30F3\u30B0"
   - icon: ':heavy_check_mark:'
     path: graph/dinic.hpp
     title: graph/dinic.hpp
@@ -108,7 +108,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
   requiredBy: []
-  timestamp: '2024-05-02 19:46:37+09:00'
+  timestamp: '2024-05-03 21:18:36+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp

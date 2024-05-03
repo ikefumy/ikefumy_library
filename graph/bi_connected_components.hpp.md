@@ -90,14 +90,21 @@ data:
   isVerificationFile: false
   path: graph/bi_connected_components.hpp
   requiredBy: []
-  timestamp: '2024-05-02 19:46:37+09:00'
+  timestamp: '2024-05-03 21:18:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/bi_connected_components.test.cpp
 documentation_of: graph/bi_connected_components.hpp
 layout: document
-redirect_from:
-- /library/graph/bi_connected_components.hpp
-- /library/graph/bi_connected_components.hpp.html
-title: graph/bi_connected_components.hpp
+title: "\u4E8C\u91CD\u9802\u70B9\u9023\u7D50\u6210\u5206\u5206\u89E3"
 ---
+
+## 概要
+二重頂点連結成分に分解します。0-indexedです。
+
+## 使い方
+- `void build()` : 二重頂点連結成分分解を行う。
+- `vector<vector<int>> get_comps()` : 二重頂点連結成分の集合を返す
+
+## 参考にしたサイト
+- [二重頂点連結成分分解](https://kokiymgch.hatenablog.com/entry/2018/03/21/152148)

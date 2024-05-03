@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: data_structure/union_find.hpp
-    title: data_structure/union_find.hpp
+    title: Union Find
   - icon: ':heavy_check_mark:'
     path: template/template.hpp
     title: template/template.hpp
@@ -75,7 +75,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/data_structure/union_find.test.cpp
   requiredBy: []
-  timestamp: '2024-05-02 19:46:37+09:00'
+  timestamp: '2024-05-03 21:18:36+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/data_structure/union_find.test.cpp

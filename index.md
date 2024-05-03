@@ -11,15 +11,15 @@ data:
       title: "\u6C38\u7D9A\u30BB\u30B0\u6728"
     - icon: ':heavy_check_mark:'
       path: data_structure/union_find.hpp
-      title: data_structure/union_find.hpp
+      title: Union Find
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
       path: graph/bi_connected_components.hpp
-      title: graph/bi_connected_components.hpp
+      title: "\u4E8C\u91CD\u9802\u70B9\u9023\u7D50\u6210\u5206\u5206\u89E3"
     - icon: ':heavy_check_mark:'
       path: graph/bipartite_graph_matching.hpp
-      title: graph/bipartite_graph_matching.hpp
+      title: "\u4E8C\u90E8\u30DE\u30C3\u30C1\u30F3\u30B0"
     - icon: ':heavy_check_mark:'
       path: graph/dinic.hpp
       title: graph/dinic.hpp

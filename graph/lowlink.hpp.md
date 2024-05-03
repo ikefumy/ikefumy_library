@@ -7,7 +7,7 @@ data:
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
     path: graph/bi_connected_components.hpp
-    title: graph/bi_connected_components.hpp
+    title: "\u4E8C\u91CD\u9802\u70B9\u9023\u7D50\u6210\u5206\u5206\u89E3"
   - icon: ':heavy_check_mark:'
     path: graph/two_edge_connected_components.hpp
     title: graph/two_edge_connected_components.hpp
@@ -74,7 +74,7 @@ data:
   requiredBy:
   - graph/bi_connected_components.hpp
   - graph/two_edge_connected_components.hpp
-  timestamp: '2024-05-02 19:46:37+09:00'
+  timestamp: '2024-05-03 21:18:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/bi_connected_components.test.cpp
