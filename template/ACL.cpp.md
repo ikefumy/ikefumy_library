@@ -22,7 +22,7 @@ data:
   isVerificationFile: false
   path: template/ACL.cpp
   requiredBy: []
-  timestamp: '2024-05-03 21:18:36+09:00'
+  timestamp: '2024-05-03 21:39:46+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: template/ACL.cpp

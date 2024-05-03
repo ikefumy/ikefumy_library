@@ -69,7 +69,7 @@ data:
   isVerificationFile: false
   path: graph/bipartite_graph_matching.hpp
   requiredBy: []
-  timestamp: '2024-05-03 21:18:36+09:00'
+  timestamp: '2024-05-03 21:39:46+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
@@ -79,7 +79,9 @@ title: "\u4E8C\u90E8\u30DE\u30C3\u30C1\u30F3\u30B0"
 ---
 
 ## 使い方
-- `set_cap(bool isL, int v, int cap)` : `isL`が`true`のとき、L側の頂点$v$のマッチングさせる回数の上限を$cap$に変更する。
-- `vector<pair<int, int>> matching()` : マッチングを行い、マッチングが成立した辺を集合として返す。
-
-
+- `void add_edge(int u, int v)`
+    - L側の頂点$u$とR側の頂点$v$を結ぶ。
+- `set_cap(bool isL, int v, int cap)`
+    - `isL`が`true`のとき、L側の頂点$v$のマッチングさせる回数の上限を$cap$に変更する。
+- `vector<pair<int, int>> matching()`
+    - マッチングを行い、マッチングが成立した辺のリストを返す。
