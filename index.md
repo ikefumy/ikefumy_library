@@ -12,6 +12,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/union_find.hpp
       title: Union Find
+    - icon: ':heavy_check_mark:'
+      path: data_structure/wavelet_matrix.hpp
+      title: Wavelet Matrix
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -90,6 +93,9 @@ data:
   - name: test/AOJ
     pages:
     - icon: ':heavy_check_mark:'
+      path: test/AOJ/1549.test.cpp
+      title: test/AOJ/1549.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/AOJ/1615.test.cpp
       title: test/AOJ/1615.test.cpp
   - name: test/LibraryChecker/data_structure
@@ -98,8 +104,14 @@ data:
       path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
       title: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
+      title: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
       title: test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/data_structure/static_range_frequency.test.cpp
+      title: test/LibraryChecker/data_structure/static_range_frequency.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/data_structure/union_find.test.cpp
       title: test/LibraryChecker/data_structure/union_find.test.cpp

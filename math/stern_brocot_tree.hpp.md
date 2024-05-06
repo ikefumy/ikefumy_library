@@ -59,7 +59,7 @@ data:
   isVerificationFile: false
   path: math/stern_brocot_tree.hpp
   requiredBy: []
-  timestamp: '2024-05-03 21:39:46+09:00'
+  timestamp: '2024-05-06 21:59:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/math/stern_brocot_tree.test.cpp

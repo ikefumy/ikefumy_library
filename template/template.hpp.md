@@ -4,14 +4,23 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/AOJ/1549.test.cpp
+    title: test/AOJ/1549.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ/1615.test.cpp
     title: test/AOJ/1615.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
     title: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
+    title: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
     title: test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/data_structure/static_range_frequency.test.cpp
+    title: test/LibraryChecker/data_structure/static_range_frequency.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/data_structure/union_find.test.cpp
     title: test/LibraryChecker/data_structure/union_find.test.cpp
@@ -104,7 +113,7 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-05-03 21:39:46+09:00'
+  timestamp: '2024-05-06 21:59:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
@@ -112,12 +121,15 @@ data:
   - test/LibraryChecker/graph/bi_connected_components.test.cpp
   - test/LibraryChecker/graph/two_edge_connected_components.test.cpp
   - test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
+  - test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
   - test/LibraryChecker/data_structure/union_find.test.cpp
   - test/LibraryChecker/data_structure/line_add_get_min.test.cpp
+  - test/LibraryChecker/data_structure/static_range_frequency.test.cpp
   - test/LibraryChecker/math/enumerate_quotients.test.cpp
   - test/LibraryChecker/math/stern_brocot_tree.test.cpp
   - test/LibraryChecker/math/binomial_coefficient(Prime_Mod).test.cpp
   - test/LibraryChecker/tree/lowest_common_ancestor.test.cpp
+  - test/AOJ/1549.test.cpp
   - test/AOJ/1615.test.cpp
 documentation_of: template/template.hpp
 layout: document
