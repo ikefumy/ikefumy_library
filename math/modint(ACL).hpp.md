@@ -20,7 +20,7 @@ data:
   isVerificationFile: false
   path: math/modint(ACL).hpp
   requiredBy: []
-  timestamp: '2024-05-06 21:59:55+09:00'
+  timestamp: '2024-05-07 00:38:36+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: math/modint(ACL).hpp

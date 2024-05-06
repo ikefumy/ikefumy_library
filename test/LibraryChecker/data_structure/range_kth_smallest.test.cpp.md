@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: data_structure/wavelet_matrix.hpp
-    title: Wavelet Matrix
+    title: Wavelet Matrix 2D
   - icon: ':heavy_check_mark:'
     path: template/template.hpp
     title: template/template.hpp
@@ -117,7 +117,7 @@ data:
   isVerificationFile: true
   path: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
   requiredBy: []
-  timestamp: '2024-05-06 21:59:55+09:00'
+  timestamp: '2024-05-07 00:38:36+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp

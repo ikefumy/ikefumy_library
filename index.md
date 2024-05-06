@@ -14,7 +14,10 @@ data:
       title: Union Find
     - icon: ':heavy_check_mark:'
       path: data_structure/wavelet_matrix.hpp
-      title: Wavelet Matrix
+      title: Wavelet Matrix 2D
+    - icon: ':heavy_check_mark:'
+      path: data_structure/wavelet_matrix_2d.hpp
+      title: data_structure/wavelet_matrix_2d.hpp
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -103,6 +106,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
       title: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/data_structure/point_add_rectangle_sum.test.cpp
+      title: test/LibraryChecker/data_structure/point_add_rectangle_sum.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
       title: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
