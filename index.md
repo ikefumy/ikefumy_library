@@ -4,20 +4,29 @@ data:
   - name: data_structure
     pages:
     - icon: ':heavy_check_mark:'
+      path: data_structure/BIT_on_wavelet_matrix.hpp
+      title: BIT on Wavelet Matrix
+    - icon: ':heavy_check_mark:'
+      path: data_structure/binary_indexed_tree.hpp
+      title: Binary Indexed Tree
+    - icon: ':heavy_check_mark:'
       path: data_structure/li_chao_tree.hpp
       title: Li Chao Tree
     - icon: ':warning:'
       path: data_structure/persistent_segment_tree.hpp
       title: "\u6C38\u7D9A\u30BB\u30B0\u6728"
     - icon: ':heavy_check_mark:'
+      path: data_structure/segment_tree.hpp
+      title: Segment Tree
+    - icon: ':heavy_check_mark:'
+      path: data_structure/segment_tree_on_wavelet_matrix.hpp
+      title: Segment Tree on Wavelet Matrix
+    - icon: ':heavy_check_mark:'
       path: data_structure/union_find.hpp
       title: Union Find
     - icon: ':heavy_check_mark:'
       path: data_structure/wavelet_matrix.hpp
-      title: Wavelet Matrix 2D
-    - icon: ':heavy_check_mark:'
-      path: data_structure/wavelet_matrix_2d.hpp
-      title: data_structure/wavelet_matrix_2d.hpp
+      title: Wavelet Matrix
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -107,8 +116,11 @@ data:
       path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
       title: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/LibraryChecker/data_structure/point_add_rectangle_sum.test.cpp
-      title: test/LibraryChecker/data_structure/point_add_rectangle_sum.test.cpp
+      path: test/LibraryChecker/data_structure/point_add_rectangle_sum_BIT_WM.test.cpp
+      title: test/LibraryChecker/data_structure/point_add_rectangle_sum_BIT_WM.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/LibraryChecker/data_structure/point_add_rectangle_sum_SegTree_WM.test.cpp
+      title: test/LibraryChecker/data_structure/point_add_rectangle_sum_SegTree_WM.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
       title: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp

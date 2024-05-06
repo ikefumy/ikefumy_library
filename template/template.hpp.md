@@ -13,8 +13,11 @@ data:
     path: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
     title: test/LibraryChecker/data_structure/line_add_get_min.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/LibraryChecker/data_structure/point_add_rectangle_sum.test.cpp
-    title: test/LibraryChecker/data_structure/point_add_rectangle_sum.test.cpp
+    path: test/LibraryChecker/data_structure/point_add_rectangle_sum_BIT_WM.test.cpp
+    title: test/LibraryChecker/data_structure/point_add_rectangle_sum_BIT_WM.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/LibraryChecker/data_structure/point_add_rectangle_sum_SegTree_WM.test.cpp
+    title: test/LibraryChecker/data_structure/point_add_rectangle_sum_SegTree_WM.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
     title: test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
@@ -116,7 +119,7 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2024-05-07 00:38:36+09:00'
+  timestamp: '2024-05-07 03:31:27+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
@@ -126,9 +129,10 @@ data:
   - test/LibraryChecker/data_structure/segment_add_get_min.test.cpp
   - test/LibraryChecker/data_structure/range_kth_smallest.test.cpp
   - test/LibraryChecker/data_structure/union_find.test.cpp
+  - test/LibraryChecker/data_structure/point_add_rectangle_sum_SegTree_WM.test.cpp
+  - test/LibraryChecker/data_structure/point_add_rectangle_sum_BIT_WM.test.cpp
   - test/LibraryChecker/data_structure/line_add_get_min.test.cpp
   - test/LibraryChecker/data_structure/static_range_frequency.test.cpp
-  - test/LibraryChecker/data_structure/point_add_rectangle_sum.test.cpp
   - test/LibraryChecker/math/enumerate_quotients.test.cpp
   - test/LibraryChecker/math/stern_brocot_tree.test.cpp
   - test/LibraryChecker/math/binomial_coefficient(Prime_Mod).test.cpp

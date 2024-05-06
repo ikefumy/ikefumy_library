@@ -74,7 +74,7 @@ data:
   isVerificationFile: false
   path: math/big_modint.hpp
   requiredBy: []
-  timestamp: '2024-05-07 00:38:36+09:00'
+  timestamp: '2024-05-07 03:31:27+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: math/big_modint.hpp

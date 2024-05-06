@@ -70,7 +70,7 @@ data:
   path: graph/dinic.hpp
   requiredBy:
   - graph/bipartite_graph_matching.hpp
-  timestamp: '2024-05-07 00:38:36+09:00'
+  timestamp: '2024-05-07 03:31:27+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/LibraryChecker/graph/matching_on_bipartite_graph.test.cpp
