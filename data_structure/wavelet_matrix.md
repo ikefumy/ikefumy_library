@@ -37,3 +37,7 @@ documentation_of: ./wavelet_matrix.hpp
 - `T range_freq(int lint r, T lower, T upper)` : $\mathrm{O}(\log{A})$
 - `T next_value(int l, int r, T k)` : $\mathrm{O}(\log{A})$
 - `T prev_value(int l, int r, T k)` : $\mathrm{O}(\log{A})$
+
+## 参考
+- [ウェーブレット行列(wavelet matrix) - Eating Your Own Cat Food](https://miti-7.hatenablog.com/entry/2018/04/28/152259)
+- [Wavelet Matrix - Nyaan's Library](https://nyaannyaan.github.io/library/data-structure-2d/wavelet-matrix.hpp.html)

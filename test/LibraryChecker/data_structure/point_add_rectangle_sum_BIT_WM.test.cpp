@@ -1,24 +1,16 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_rectangle_sum"
 
 #include "../../../template/template.hpp"
-#include "../../../data_structure/wavelet_matrix_2d.hpp"
+#include "../../../data_structure/BIT_on_wavelet_matrix.hpp"
 
 using T = long long;
-
-T op(T a, T b) {
-    return a + b;
-}
-
-T e() {
-    return 0;
-}
 
 int N, Q, x[100010], y[100010], w[100010], q[100010], l[100010], d[100010], r[100010], u[100010];
 int main() {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
     cout << fixed << setprecision(20);
-    wavelet_matrix_2d<T, op, e> wm;
+    wavelet_matrix_2d<T> wm;
     cin >> N >> Q;
     rep (i, N) {
         cin >> x[i] >> y[i] >> w[i];

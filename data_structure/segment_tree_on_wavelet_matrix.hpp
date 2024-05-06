@@ -1,38 +1,4 @@
-template<class T, T(* op)(T, T), T(* e)()>
-struct segment_tree {
-    int N;
-    vector<T> node;
-
-    segment_tree(int n = 0) {
-        N = 1;
-        while(N < n) N *= 2;
-        node.resize(N * 2 - 1, e());
-    }
-
-    void update (int i, T x) {
-        i += N - 1;
-        node[i] = x;
-        while (i > 0) {
-            i = (i - 1) / 2;
-            node[i] = op(node[i * 2 + 1], node[i * 2 + 2]);
-        }
-    }
-
-    void add (int i, T x) {
-        update(i, op(node[i + N - 1], x));
-    }
-
-    T get_val (int a, int b, int k = 0, int l = 0, int r = -1) {
-        if (r == -1) r = N;
-        if (b <= l || r <= a) return e();
-        if (a <= l && r <= b) return node[k];
-
-        T vl = get_val(a, b, k * 2 + 1, l, (l + r) / 2);
-        T vr = get_val(a, b, k * 2 + 2, (l + r) / 2, r);
-        return op(vl, vr);
-    }
-};
-
+#include "./segment_tree.hpp"
 
 struct bit_vector {
     int n;
@@ -99,7 +65,7 @@ struct wavelet_matrix_2d {
         }
         for (int i = lg - 1; i >= 0; i--) {
             int ones = crt.size() - 1;
-            for (int j = 0; j < crt.size(); j++) {
+            for (int j = 0; j < (int)crt.size(); j++) {
                 if (crt[j] >> i & 1) {
                     bv[i].set(j);
                     nxt[ones--] = crt[j];
@@ -123,7 +89,7 @@ struct wavelet_matrix_2d {
             } else {
                 it = it0;
             }
-            st[i].add(it, val);
+            st[i].update(it, val);
         }
     }
 
@@ -149,9 +115,5 @@ struct wavelet_matrix_2d {
             }
         }
         return ret;
-    }
-
-    T get_sum(T l, T r, T d, T u) {
-        return get_sum(l, r, u) - get_sum(l, r, d); 
     }
 };
